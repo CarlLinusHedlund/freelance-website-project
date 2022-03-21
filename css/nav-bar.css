@@ -3,7 +3,6 @@
 }
 body {
   font-family: "Ubuntu", sans-serif;
-  background-color: black;
   margin: 0;
 }
 
@@ -14,12 +13,12 @@ body {
   height: 100px;
   align-items: center;
   background-color: white;
+  padding: 0 20px;
 }
 .mobile-menu-container {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 20px;
 }
 .fa-bars {
   font-size: 36px;
