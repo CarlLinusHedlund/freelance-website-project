@@ -3,21 +3,29 @@
 }
 body {
   font-family: "Ubuntu", sans-serif;
+  background-color: black;
+  margin: 0;
 }
-.inner {
-  margin: 0 auto;
-  max-width: 1440px;
-}
+
 .header-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   height: 100px;
   align-items: center;
-  padding: 0 60px;
+  background-color: white;
+}
+.mobile-menu-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+.fa-bars {
+  font-size: 36px;
 }
 .logo {
-  font-size: 36px;
+  font-size: 28px;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 300;
 }
@@ -30,6 +38,9 @@ body {
   flex-direction: row;
   align-items: center;
   font-size: 14px;
+}
+.desktop-nav {
+  display: none;
 }
 .nav-btn {
   border: transparent;
@@ -49,6 +60,7 @@ body {
   background-color: white;
   margin-right: 15px;
   margin-left: 20px;
+  display: none;
 }
 #bli-med {
   border: transparent;
@@ -59,4 +71,52 @@ body {
   background-color: #eca63d;
   height: 30px;
   font-weight: 700;
+}
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  padding: 0 20px;
+  align-items: flex-start;
+  background-color: white;
+  padding: 20px;
+  width: 20%;
+  min-width: 250px;
+}
+#mobile-logg-på {
+  padding: 5px;
+  border-radius: 15px;
+  width: 100px;
+  border: 2px solid #eca63d;
+  color: #eca63d;
+  background-color: white;
+  font-weight: 700;
+}
+@media screen and (min-width: 769px) {
+  .inner {
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+  .header-container {
+    padding: 0 20px;
+  }
+  .nav {
+    display: flex;
+  }
+  .desktop-nav {
+    display: flex;
+    flex-direction: row;
+  }
+  .fa-bars {
+    display: none;
+  }
+  #logg-på {
+    display: block;
+  }
+  .user-nav-container {
+    display: flex;
+  }
 }

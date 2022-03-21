@@ -15,9 +15,18 @@ body {
   align-items: center;
   padding: 60px;
 }
-.footer-nav {
+.client-toogle,
+.talent-toogle,
+.support-toogle,
+.selskap-toogle {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.footer-nav {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
   width: 100%;
   border-bottom: 2px solid #bfbfbf;
@@ -33,6 +42,18 @@ body {
 .footer-header {
   font-weight: 700;
   margin-bottom: 50px;
+}
+.dropdown-clients,
+.dropdown-talent,
+.dropdown-support,
+.dropdown-selskap {
+  display: flex;
+  flex-direction: column;
+  height: 0;
+  overflow: hidden;
+}
+.fa-angle-down {
+  font-size: 25px;
 }
 .footer-nav-links {
   margin-bottom: 20px;
@@ -60,18 +81,42 @@ body {
   width: 100%;
   align-items: baseline;
   margin-top: 30px;
-  padding-right: 50px;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+.policy-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 .policy-info {
-  padding-left: 30px;
   font-size: 15px;
   color: #bfbfbf;
+  display: flex;
 }
 .footer-logo {
-  font-size: 28px;
+  font-size: 20px;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 300;
 }
 .footer-logo span {
   font-style: italic;
+}
+@media screen and (min-width: 769px) {
+  .fa-angle-down {
+    display: none;
+  }
+  .dropdown-clients,
+  .dropdown-talent,
+  .dropdown-support,
+  .dropdown-selskap {
+    display: flex;
+    height: 100%;
+  }
+  .footer-nav {
+    flex-direction: row;
+  }
+  .policy {
+    flex-direction: row;
+  }
 }
