@@ -38,7 +38,7 @@ body {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
 }
-#språk-velger {
+.språk-velger {
   background-color: #eaeaea;
   padding: 10px;
   border-radius: 5px;
