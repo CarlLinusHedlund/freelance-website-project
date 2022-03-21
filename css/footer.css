@@ -58,7 +58,7 @@ body {
 .policy {
   display: flex;
   width: 100%;
-  align-items: flex-end;
+  align-items: baseline;
   margin-top: 30px;
   padding-right: 50px;
 }
@@ -66,4 +66,12 @@ body {
   padding-left: 30px;
   font-size: 15px;
   color: #bfbfbf;
+}
+.footer-logo {
+  font-size: 28px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+}
+.footer-logo span {
+  font-style: italic;
 }
