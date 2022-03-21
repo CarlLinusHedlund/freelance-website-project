@@ -1,0 +1,31 @@
+.hero-banner .inner {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.hero-banner {
+  background-color: var(--jobless-darkishgray);
+  height: 100%;
+  padding: 60px 0;
+}
+
+.herobanner-text {
+  color: var(--jobless-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10;
+}
+
+.herobanner-text h1 {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.iphone-hero {
+  height: 300px;
+}
