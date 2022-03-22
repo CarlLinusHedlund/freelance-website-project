@@ -9,7 +9,7 @@
   --jobless-blue: var(--jobless-primary);
   --jobless-primary: #1b4159;
 
-  --jobless-oranger: var(--jobless-secondary);
+  --jobless-orange: var(--jobless-secondary);
   --jobless-secondary: #eca63d;
 
   --jobless-darkishgray: #1e1e1e;
@@ -18,15 +18,13 @@
   --jobless-shadow: 0px 3.6px 2.7px rgba(0, 0, 0, 0.022),
     0px 9px 6.9px rgba(0, 0, 0, 0.031), 0px 18.4px 14.2px rgba(0, 0, 0, 0.039),
     0px 38px 29.2px rgba(0, 0, 0, 0.048), 0px 104px 80px rgba(0, 0, 0, 0.07);
-  /*  */
+
+  /* Buttons */
+  --BTN-radius-jobless: 30px;
+  --BTN-height-jobless: 50px;
+  --BTN-border-jobless: 2px solid #000;
 }
 
 * {
   box-sizing: border-box;
-}
-body {
-  font-family: var(--heading-font);
-}
-.hide {
-  display: none;
 }
