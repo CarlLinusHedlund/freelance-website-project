@@ -19,7 +19,21 @@
         0px 9px 6.9px rgba(0, 0, 0, 0.031),
         0px 18.4px 14.2px rgba(0, 0, 0, 0.039),
         0px 38px 29.2px rgba(0, 0, 0, 0.048), 0px 104px 80px rgba(0, 0, 0, 0.07);
-    /*  */
+    /* */
+}
+/*fs = font-size*/
+.fs-title {
+    font-size: 36px;
+    font-family: var(--heading-font);
+}
+.fs-paragraph {
+    font-size: 18px;
+    font-family: var(--secondary-font);
+}
+@media screen and (min-width: 400px) {
+    .fs-title {
+        font-size: 36px;
+    }
 }
 
 * {

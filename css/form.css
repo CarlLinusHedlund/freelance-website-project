@@ -1,0 +1,65 @@
+.form-contact-wrapper {
+    width: 100%;
+}
+.form-contact {
+    font-family: var(--secondary-font);
+    color: var(--jobless-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--jobless-primary);
+}
+.form-meat {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+.form-contact-title {
+    font-family: var(--heading-font);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    padding: 8px 8px;
+    border-bottom: var(--jobless-white) solid 2px;
+    margin-top: 0;
+}
+.form-contact input,
+.form-contact textarea {
+    font-size: 18px; /*legg inn variabel for denne str.*/
+    color: var(--jobless-white);
+    background-color: transparent;
+    padding: 6px 10px;
+    width: 100%;
+}
+.form-contact input {
+    border: 0;
+    border-bottom: var(--jobless-white) solid 2px;
+}
+.form-contact textarea {
+    border: var(--jobless-white) 2px solid;
+    border-radius: 15px;
+}
+.form-contact input::placeholder {
+    color: var(--jobless-white);
+}
+.form-contact-btn {
+    border: transparent;
+    border-radius: 50px;
+    border: 2px var(--jobless-white) solid;
+    padding: 5px;
+    width: 185px;
+    color: white;
+    background-color: transparent;
+    height: 45px;
+    font-size: 24px;
+    font-weight: 500; /*I maybe need change!*/
+}
+.form-contact textarea::placeholder {
+    color: var(--jobless-white);
+    font-family: var(--secondary-font);
+}
