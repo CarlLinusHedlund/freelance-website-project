@@ -1,13 +1,16 @@
-
-
 body {
   background-color: var(--jobless-white);
 }
 
 .banner-container {
-  padding-top: 100px;
+  padding: 200px 20px 20px 20px;
   position: relative;
-  height: 450px;
+  height: 350px;
+  margin-bottom: 200px;
+}
+
+.heading-container {
+  max-width: 460px;
 }
 
 .mask1 img {
@@ -27,4 +30,66 @@ body {
   right: 100px;
   background-color: var(--jobless-primary);
   display: none;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  width: 280px;
+  justify-content: space-between;
+}
+
+.button-container a {
+  text-decoration: none;
+  font-family: var(--secondary-font);
+  width: 100%;
+}
+
+.btn {
+  height: var(--BTN-height-small-jobless);
+  width: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: var(--BTN-radius-jobless);
+  cursor: pointer;
+}
+
+.readmore {
+  border: var(--BTN-border-jobless);
+}
+
+.readmore:hover {
+  background: var(--jobless-primary);
+  border: none;
+  transition: 150ms;
+}
+
+.readmore:hover a {
+  color: var(--jobless-white);
+}
+
+.readmore a {
+  color: var(--jobless-black);
+  font-size: 0.9em;
+}
+
+.betatest {
+  background: var(--jobless-primary);
+}
+
+.betatest:hover {
+  background: none;
+  border: var(--BTN-border-jobless);
+  transition: 150ms;
+}
+
+.betatest a {
+  color: var(--jobless-white);
+  font-size: 0.9em;
+}
+
+.betatest:hover a {
+  color: var(--jobless-black);
 }

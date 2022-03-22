@@ -21,6 +21,7 @@
 
   /* Buttons */
   --BTN-radius-jobless: 30px;
+  --BTN-height-small-jobless: 40px;
   --BTN-height-jobless: 50px;
   --BTN-border-jobless: 2px solid #000;
 }
