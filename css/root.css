@@ -24,6 +24,7 @@
   --BTN-height-jobless: 50px;
   --BTN-height-small-jobless: 40px;
   --BTN-border-jobless: 2px solid #000;
+  --BTN-border-white-jobless: 2px solid #fff;
 }
 
 * {

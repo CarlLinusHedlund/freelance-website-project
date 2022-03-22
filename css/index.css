@@ -151,6 +151,72 @@ body {
 
 .see-how-btn a {
   text-decoration: none;
-  color: var(--jobless-black);
+  color: var(--jobless-darkishgray);
   font-weight: 700;
+}
+
+.index2-container {
+  background-image: url(../Images/images/sand-texture.jpg);
+  background-size: cover;
+  background-position: bottom;
+  height: 750px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.index2-container * {
+  position: relative;
+  z-index: 3;
+}
+
+.index2-info-container {
+  color: var(--jobless-white);
+  display: flex;
+  flex-direction: column;
+  margin: 75px 20px 0 20px;
+  max-width: 300px;
+  align-items: center;
+}
+
+.text-flex {
+  text-align: center;
+  margin: 5px;
+}
+
+.index2-info-container a {
+  color: var(--jobless-white);
+  text-decoration: none;
+}
+
+.index2-see-how-btn {
+  border: var(--BTN-border-white-jobless);
+  width: 250px;
+  height: var(--BTN-height-small-jobless);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 250ms;
+  margin-top: 20px;
+}
+
+.index2-container::after {
+  background-color: var(--jobless-dark);
+  z-index: 2;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 40%;
+}
+
+.index2-mockup-container {
+}
+
+.index2-mockup-container img {
 }
