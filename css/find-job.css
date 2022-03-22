@@ -143,6 +143,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 100%;
   min-width: 200px;
 }
 .client-message-container,
