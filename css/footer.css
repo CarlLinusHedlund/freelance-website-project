@@ -10,8 +10,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: white;
-  background-color: black;
+  color: var(--jobless-white);
+  background-color: var(--jobless-darkishgray);
   align-items: center;
   padding: 60px;
 }
@@ -70,11 +70,16 @@ body {
   padding-top: 30px;
   padding-bottom: 30px;
   display: flex;
-  gap: 40px;
+  gap: 20px;
+  flex-direction: column;
 }
 .socials a {
   text-decoration: none;
-  color: white;
+  color: var(--jobless-white);
+}
+.social-media {
+  display: flex;
+  gap: 20px;
 }
 .policy {
   display: flex;
@@ -118,5 +123,9 @@ body {
   }
   .policy {
     flex-direction: row;
+  }
+  .socials {
+    flex-direction: row;
+    gap: 40px;
   }
 }
