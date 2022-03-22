@@ -33,12 +33,42 @@ main {
 .iphone-hero {
   height: 300px;
 }
+
 .find-work-container .inner {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 40px;
+}
+.find-work-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.find-work-info h2 {
+  font-size: 43px;
+}
+.find-work-info p,
+.mobile-text {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+}
+.desktop-text {
+  display: none;
+}
+
+.example-ui-area {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  width: 100%;
 }
 .categories-toggle-container {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 .categories-toggle {
   padding: 10px 20px;
@@ -101,15 +131,73 @@ main {
   width: 100px;
   padding: 5px 15px;
 }
+.messages-mockup {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  min-width: 200px;
+}
 .client-message-container,
 .talent-message-container {
   display: flex;
   gap: 10px;
 }
-
+.talent-message-container {
+  flex-direction: row;
+}
+.client-message-container {
+  flex-direction: row-reverse;
+}
 .profile-thumbnail {
-  background-color: black;
   height: 45px;
   width: 45px;
   border-radius: 50%;
+}
+
+.talent-profile {
+  background-image: url(../Images/img/profilbilde-arne.png);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: var(--jobless-orange);
+}
+.client-profile {
+  background-image: url(../Images/logos/Google__G__Logo.svg);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--jobless-white);
+}
+
+.message-box {
+  background-color: var(--jobless-blue);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.client-message {
+  background-color: transparent;
+  border: 2px solid var(--jobless-blue);
+  color: var(--jobless-blue);
+}
+.talent-message {
+  color: var(--jobless-white);
+}
+
+@media screen and (min-width: 769px) {
+  .find-work-container .inner {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  .example-ui-area {
+    width: 50%;
+  }
+  .mobile-text {
+    display: none;
+  }
+  .desktop-text {
+    display: flex;
+  }
 }
