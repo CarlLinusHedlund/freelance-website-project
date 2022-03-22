@@ -8,21 +8,21 @@
   --jobless-dark: #000;
   --jobless-blue: var(--jobless-primary);
   --jobless-primary: #1b4159;
-
   --jobless-orange: var(--jobless-secondary);
   --jobless-secondary: #eca63d;
-
   --jobless-darkishgray: #1e1e1e;
+  --jobless-lightgrey: #f4f4f4;
 
   /* root shadow */
-  --jobless-shadow: 0px 3.6px 2.7px rgba(0, 0, 0, 0.022),
-    0px 9px 6.9px rgba(0, 0, 0, 0.031), 0px 18.4px 14.2px rgba(0, 0, 0, 0.039),
-    0px 38px 29.2px rgba(0, 0, 0, 0.048), 0px 104px 80px rgba(0, 0, 0, 0.07);
+  --jobless-shadow: 0px 0.7px 1.3px rgba(0, 0, 0, 0.031),
+    0px 1.7px 3.3px rgba(0, 0, 0, 0.044), 0px 3.4px 6.7px rgba(0, 0, 0, 0.056),
+    0px 6.9px 13.9px rgba(0, 0, 0, 0.069), 0px 19px 38px rgba(0, 0, 0, 0.1);
 
   /* Buttons */
   --BTN-radius-jobless: 30px;
-  --BTN-height-small-jobless: 40px;
+  --BTN-radius-small-jobless: 15px;
   --BTN-height-jobless: 50px;
+  --BTN-height-small-jobless: 40px;
   --BTN-border-jobless: 2px solid #000;
 }
 

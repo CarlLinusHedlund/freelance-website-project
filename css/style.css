@@ -46,7 +46,6 @@ body {
 }
 
 .btn {
-  height: var(--BTN-height-small-jobless);
   width: 130px;
   display: flex;
   justify-content: center;
@@ -54,16 +53,18 @@ body {
   text-align: center;
   border-radius: var(--BTN-radius-jobless);
   cursor: pointer;
+  height: var(--BTN-height-small-jobless);
 }
 
 .readmore {
   border: var(--BTN-border-jobless);
+  box-shadow: var(--jobless-shadow);
 }
 
 .readmore:hover {
   background: var(--jobless-primary);
   border: none;
-  transition: 150ms;
+  transition: 250ms;
 }
 
 .readmore:hover a {
@@ -77,12 +78,13 @@ body {
 
 .betatest {
   background: var(--jobless-primary);
+  box-shadow: var(--jobless-shadow);
 }
 
 .betatest:hover {
   background: none;
   border: var(--BTN-border-jobless);
-  transition: 150ms;
+  transition: 250ms;
 }
 
 .betatest a {
@@ -92,4 +94,63 @@ body {
 
 .betatest:hover a {
   color: var(--jobless-black);
+}
+
+.wave {
+  fill: var(--jobless-lightgrey);
+  position: relative;
+  top: 5px;
+}
+
+.wave-bottom {
+  fill: var(--jobless-lightgrey);
+  position: relative;
+  box-shadow: var(--jobless-shadow);
+}
+
+.index1-info-container {
+  background: var(--jobless-lightgrey);
+  height: 700px;
+}
+
+.earn-money-bg {
+  fill: var(--jobless-lightgrey);
+}
+
+.earn-money-storypik {
+  width: 100%;
+  height: 400px;
+}
+
+.earn-money-info {
+  margin: 0 20px 0 20px;
+}
+
+.earn-money-info p {
+  font-family: var(--secondary-font);
+}
+
+.see-how-btn {
+  border: var(--BTN-border-jobless);
+  width: 250px;
+  height: var(--BTN-height-small-jobless);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 250ms;
+}
+
+.see-how-btn:hover {
+  background: var(--jobless-primary);
+  border: none;
+}
+.see-how-btn:hover a {
+  color: var(--jobless-white);
+}
+
+.see-how-btn a {
+  text-decoration: none;
+  color: var(--jobless-black);
+  font-weight: 700;
 }
