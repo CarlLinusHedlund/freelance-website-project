@@ -219,4 +219,7 @@ body {
 }
 
 .index2-mockup-container img {
+  height: 333px;
+  width: 319px;
+  margin-left: 20px;
 }
