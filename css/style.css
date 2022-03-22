@@ -1,0 +1,11 @@
+.mask1 img {
+  height: 200px;
+  width: 200px;
+}
+
+.mask1 {
+  -webkit-mask-image: url(../Images/svgs/herobanner-blob.svg);
+  mask-image: url(../Images/svgs/herobanner-blob.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
