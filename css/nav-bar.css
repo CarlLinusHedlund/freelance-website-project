@@ -3,7 +3,7 @@
 }
 body {
   font-family: "Ubuntu", sans-serif;
-  background-color: black;
+  background-color: var(--jobless-dark);
   margin: 0;
 }
 
@@ -13,7 +13,9 @@ body {
   justify-content: space-between;
   height: 100px;
   align-items: center;
-  background-color: white;
+  background-color: var(--jobless-white);
+  color: var(--jobless-dark);
+  font-weight: 500;
 }
 .mobile-menu-container {
   display: flex;
@@ -44,7 +46,8 @@ body {
 }
 .nav-btn {
   border: transparent;
-  background-color: white;
+  background-color: var(--jobless-white);
+  color: var(--jobless-dark);
   margin-right: 20px;
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
@@ -57,7 +60,8 @@ body {
 }
 #logg-på {
   border: none;
-  background-color: white;
+  background-color: var(--jobless-white);
+  color: var(--jobless-dark);
   margin-right: 15px;
   margin-left: 20px;
   display: none;
@@ -67,13 +71,13 @@ body {
   border-radius: 15px;
   padding: 5px;
   width: 100px;
-  color: white;
+  color: var(--jobless-white);
   background-color: #eca63d;
   height: 30px;
   font-weight: 700;
 }
 .mobile-nav {
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 40px;
   position: absolute;
@@ -81,7 +85,8 @@ body {
   left: 0px;
   padding: 0 20px;
   align-items: flex-start;
-  background-color: white;
+  background-color: var(--jobless-white);
+  color: var(--jobless-dark);
   padding: 20px;
   width: 20%;
   min-width: 250px;
@@ -92,7 +97,8 @@ body {
   width: 100px;
   border: 2px solid #eca63d;
   color: #eca63d;
-  background-color: white;
+  background-color: var(--jobless-white);
+  color: var(--jobless-dark);
   font-weight: 700;
 }
 @media screen and (min-width: 769px) {
