@@ -1,0 +1,55 @@
+body {
+  font-family: var(--secondary-font);
+}
+.beta-tester {
+  background-image: url(../Images/images/black-texture2.jpg);
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.betatester-hero-text {
+  color: var(--jobless-white);
+  font-family: var(--heading-font);
+  font-size: 32px;
+  text-align: center;
+}
+.email-submit {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.email-betatester {
+  border-radius: 8px;
+  padding: 8px;
+  border: 1px solid #e2e2e2;
+  background-color: transparent;
+}
+.submit-betatester {
+  border: none;
+  background-color: transparent;
+  color: #e2e2e2;
+}
+.betatester-info {
+  color: #e2e2e2;
+}
+@media screen and (min-width: 769px) {
+  .beta-tester {
+    height: 600px;
+  }
+  .betatester-hero-text {
+    font-size: 45px;
+  }
+  .email-submit {
+    flex-direction: row;
+    width: 100%;
+    max-width: 650px;
+  }
+  .email-betatester {
+    width: 100%;
+  }
+}
