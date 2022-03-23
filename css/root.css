@@ -24,7 +24,10 @@
   --BTN-height-jobless: 50px;
   --BTN-border-jobless: 2px solid #000;
 }
-
 * {
   box-sizing: border-box;
+}
+
+.hide {
+  display: none;
 }

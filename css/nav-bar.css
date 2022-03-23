@@ -6,6 +6,10 @@ body {
   margin: 0;
 }
 
+header .inner {
+  padding: 0 20px;
+}
+
 .header-container {
   display: flex;
   flex-direction: row;
@@ -20,7 +24,6 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 20px;
 }
 .fa-bars {
   font-size: 36px;
@@ -34,7 +37,6 @@ body {
   font-style: italic;
 }
 .nav {
-  margin-right: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -43,13 +45,12 @@ body {
 .desktop-nav {
   display: none;
 }
-.nav-btn {
-  border: transparent;
+.nav-link {
   background-color: var(--jobless-white);
   color: var(--jobless-dark);
-  margin-right: 20px;
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
+  text-decoration: none;
 }
 .språk-velger {
   background-color: #eaeaea;
@@ -76,7 +77,7 @@ body {
   font-weight: 700;
 }
 .mobile-nav {
-  display: none;
+  display: flex;
   flex-direction: column;
   gap: 40px;
   position: absolute;
@@ -105,15 +106,14 @@ body {
     margin: 0 auto;
     max-width: 1440px;
   }
-  .header-container {
-    padding: 0 20px;
-  }
   .nav {
     display: flex;
   }
   .desktop-nav {
     display: flex;
     flex-direction: row;
+    gap: 20px;
+    align-items: center;
   }
   .fa-bars {
     display: none;
