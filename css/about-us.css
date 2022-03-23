@@ -1,0 +1,76 @@
+.about-hero-banner {
+  background-image: url(../Images/images/blue-texture.jpg);
+  height: 500px;
+  width: 100%;
+  color: var(--jobless-white);
+  text-align: center;
+  font-size: small;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 20px;
+  margin-bottom: 100px;
+  padding-bottom: 100px;
+  border-bottom: 2px solid #ddd;
+}
+.about-info {
+  max-width: 500px;
+}
+.about-svg {
+  width: 300px;
+}
+.sikkerhet-svg,
+.inntekt-svg,
+.rettferdighet-svg {
+  width: 200px;
+  margin: 0 auto;
+}
+.value-container {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+}
+.sikkerhet-svg,
+.inntekt-svg,
+.rettferdighet-svg {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.sikkerhet,
+.inntekt,
+.rettferdighet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 20px;
+}
+@media screen and (min-width: 769px) {
+  .about-info {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    max-width: 700px;
+    margin-top: 100px;
+  }
+  .sikkerhet,
+  .inntekt,
+  .rettferdighet {
+    flex-direction: row-reverse;
+    gap: 100px;
+    max-width: 700px;
+  }
+  .rettferdighet {
+    margin-bottom: 100px;
+  }
+}
