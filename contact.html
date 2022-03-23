@@ -15,7 +15,7 @@
             src="https://kit.fontawesome.com/25a95e2ecb.js"
             crossorigin="anonymous"
         ></script>
-        
+
         <link rel="stylesheet" href="./css/footer.css" />
         <link rel="stylesheet" href="./css/contact.css" />
         <link rel="stylesheet" href="./css/index.css" />
@@ -24,7 +24,6 @@
         <link rel="stylesheet" href="./css/nav-bar.css" />
         <link rel="stylesheet" href="./css/form.css" />
         <link rel="stylesheet" href="./css/root.css" />
-        
     </head>
     <body>
         <header>
@@ -36,19 +35,17 @@
                         </div>
                         <div class="logo"><span>job</span>less.</div>
                     </div>
-                    <div class="mobile-nav">
-                        <button class="nav-btn" id="mobile-utforsk">
-                            Utforsk
-                        </button>
-                        <button class="nav-btn" id="mobile-finn-jobb">
-                            Finn Jobb
-                        </button>
-                        <button class="nav-btn" id="mobile-finn-talent">
-                            Finn Talent
-                        </button>
-                        <button class="nav-btn" id="mobile-bli-en-selger">
-                            Bli En Selger
-                        </button>
+                    <div class="mobile-nav hide">
+                        <a href="#" class="nav-link" id="utforsk">Utforsk</a>
+                        <a href="#" class="nav-link" id="finn-jobb"
+                            >Finn Jobb</a
+                        >
+                        <a href="#" class="nav-link" id="finn-talent"
+                            >Finn Talent</a
+                        >
+                        <a href="#" class="nav-link" id="bli-en-selger"
+                            >Bli En Selger</a
+                        >
                         <div class="språk-velger">
                             <span>NO</span>
                             <i class="fa-solid fa-globe"></i>
@@ -59,18 +56,18 @@
                     </div>
                     <div class="nav">
                         <div class="desktop-nav">
-                            <button class="nav-btn" id="utforsk">
-                                Utforsk
-                            </button>
-                            <button class="nav-btn" id="finn-jobb">
-                                Finn Jobb
-                            </button>
-                            <button class="nav-btn" id="finn-talent">
-                                Finn Talent
-                            </button>
-                            <button class="nav-btn" id="bli-en-selger">
-                                Bli En Selger
-                            </button>
+                            <a href="#" class="nav-link" id="utforsk"
+                                >Utforsk</a
+                            >
+                            <a href="#" class="nav-link" id="finn-jobb"
+                                >Finn Jobb</a
+                            >
+                            <a href="#" class="nav-link" id="finn-talent"
+                                >Finn Talent</a
+                            >
+                            <a href="#" class="nav-link" id="bli-en-selger"
+                                >Bli En Selger</a
+                            >
                             <div class="språk-velger">
                                 <span>NO</span>
                                 <i class="fa-solid fa-globe"></i>
@@ -88,51 +85,73 @@
                 </div>
             </div>
         </header>
-        <main class="contact-page-main">
-                <div class="info-contact-wrapper">
-                    <div class="info-contact-text">
-                        <h1 class="fs-title">Hvordan kan vi hjelpe deg?</h1>
-                        <p class="fs-paragraph">Om du ønsker å ta kontakt med oss, kan du bruke vårt kontaktskjema. <br> Eller kontakt oss på telefon.</p>
+        <div class="">
+            <main class="contact-page-main inner">
+                <section class="contact-info">
+                    <div class="top-info">
+                        <h1>Hvordan kan vi hjelpe deg?</h1>
+                        <p>
+                            Om du ønsker å ta kontakt med oss, kan du bruke vårt
+                            kontaktskjema.
+                        </p>
+                        <p>Eller kontakt oss på telefon.</p>
                     </div>
-                </div>
+                    <div class="bottom-info">
+                        <p>Telefon:+47 895 45 641</p>
+                        <p>Email: contact@jobless.no</p>
+                        <span>
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""
+                                ><i class="fa-brands fa-instagram"></i
+                            ></a>
+                            <a href=""><i class="fa-brands fa-github"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </span>
+                    </div>
+                </section>
                 <div class="form-contact-wrapper">
-                <form action="#" class="form-contact">
-                    <h2 class="form-contact-title fs-title">Kontakt Oss</h2>
-                    <div class="form-meat">
-                        <div class="form-row">
+                    <img src="../Images/svgs/kontakt-oss-blob.svg" alt="blob" />
+                    <form action="#" class="form-contact">
+                        <h2
+                            style="padding-top: 30px"
+                            class="form-contact-title fs-title"
+                        >
+                            Kontakt Oss
+                        </h2>
+                        <div class="form-meat">
+                            <div class="form-row">
+                                <input
+                                    placeholder="Fornavn"
+                                    type="text"
+                                    name="contact-fname"
+                                    id="contact-fname"
+                                />
+                                <input
+                                    placeholder="Etternavn"
+                                    type="text"
+                                    name="contact-lname"
+                                    id="contact-lname"
+                                />
+                            </div>
                             <input
-                                placeholder="Fornavn"
-                                type="text"
-                                name="contact-fname"
-                                id="contact-fname"
+                                placeholder="E-mail"
+                                type="email"
+                                name="contact-email"
+                                id="contact-email"
                             />
-                            <input
-                                placeholder="Etternavn"
-                                type="text"
-                                name="contact-lname"
-                                id="contact-lname"
-                            />
+                            <textarea
+                                class="form-contact-textarea"
+                                placeholder="Spørsmål"
+                                name="sporsmal"
+                                id="sporsmal"
+                                rows="6"
+                            ></textarea>
                         </div>
-                        <input
-                            placeholder="E-mail"
-                            type="email"
-                            name="contact-email"
-                            id="contact-email"
-                        />
-                        <textarea
-                            class="form-contact-textarea"
-                            placeholder="Spørsmål"
-                            name="sporsmal"
-                            id="sporsmal"
-                            rows="10"
-                        ></textarea>
-                    </div>
-                    <button class="form-contact-btn" type="submit">send</button>
-                </form>
+                        <a class="form-contact-btn">send</a>
+                    </form>
                 </div>
-            </div>
-        </main>
-
+            </main>
+        </div>
         <footer>
             <div class="footer-container">
                 <div class="footer-nav">
