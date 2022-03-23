@@ -26,21 +26,10 @@
   --BTN-height-jobless: 50px;
   --BTN-border-jobless: 2px solid #000;
 }
-/*fs = font-size*/
-.fs-title {
-    font-size: 36px;
-    font-family: var(--heading-font);
-}
-.fs-paragraph {
-    font-size: 18px;
-    font-family: var(--secondary-font);
-}
-
 * {
   box-sizing: border-box;
 }
-@media screen and (min-width: 400px) {
-    .fs-title {
-        font-size: 36px;
-    }
-  }
+
+.hide {
+  display: none;
+}
