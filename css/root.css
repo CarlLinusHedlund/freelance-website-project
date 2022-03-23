@@ -12,6 +12,7 @@
   --jobless-secondary: #eca63d;
   --jobless-darkishgray: #1e1e1e;
   --jobless-lightgrey: #f4f4f4;
+  --jobless-green: #92e3a9;
 
   /* root shadow */
   --jobless-shadow: 0px 0.7px 1.3px rgba(0, 0, 0, 0.031),
@@ -32,4 +33,13 @@
 
 .hide {
   display: none;
+}
+
+.inner {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.m0 {
+  margin: 0;
 }
