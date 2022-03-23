@@ -1,0 +1,112 @@
+.form-contact-wrapper {
+    flex: 1;
+    padding: 20px;
+    background-color: var(--jobless-primary);
+}
+.form-contact {
+    font-family: var(--secondary-font);
+    color: var(--jobless-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.form-meat {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+.form-contact-title {
+    font-family: var(--heading-font);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    padding: 8px;
+    border-bottom: var(--jobless-white) solid 2px;
+    margin-top: 0;
+}
+.form-contact input,
+.form-contact textarea {
+    font-size: 18px; /*legg inn variabel for denne str.*/
+    color: var(--jobless-white);
+    background-color: transparent;
+    padding: 6px 10px;
+    width: 100%;
+}
+.form-contact input {
+    border: 0;
+    border-bottom: var(--jobless-white) solid 2px;
+}
+.form-contact textarea {
+    border: var(--jobless-white) 2px solid;
+    border-radius: 15px;
+}
+.form-contact input::placeholder {
+    color: var(--jobless-white);
+}
+.form-contact-btn {
+    text-align: center;
+    border: transparent;
+    border-radius: 50px;
+    border: 2px var(--jobless-white) solid;
+    padding: 5px;
+    margin: 0 auto 8px auto;
+    width: 185px;
+    color: white;
+    background-color: transparent;
+    height: 45px;
+    font-size: 24px;
+    font-weight: 500; /*I maybe need change!*/
+}
+.form-contact textarea::placeholder {
+    color: var(--jobless-white);
+    font-family: var(--secondary-font);
+}
+.form-contact-wrapper img {
+    display: none;
+}
+/* responsive stoof */
+/* min-width: 768*/
+@media screen and (min-width: 768px) {
+    .form-contact-wrapper {
+        background: none;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .form-contact-wrapper img {
+        display: block;
+        height: 977;
+        width: 1020;
+        position: absolute;
+        left: -27%;
+        z-index: -1;
+        top: 0;
+    }
+    .form-contact h2,
+    .form-meat,
+    .form-contact-btn {
+        z-index: 10;
+    }
+    .form-meat {
+        max-width: 386px;
+    }
+}
+/* min-width: 965*/
+@media screen and (min-width: 965px) {
+    .form-contact-wrapper img {
+        left: -15%;
+    }
+}
+@media screen and (min-width: 1100px) {
+    .form-contact-wrapper {
+        background: none;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+}
