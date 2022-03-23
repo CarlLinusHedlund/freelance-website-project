@@ -119,6 +119,7 @@ body {
 
 .index1-info-container {
   height: 700px;
+  margin: 0 auto;
 }
 
 .index4-info-container {
@@ -136,7 +137,8 @@ body {
 }
 
 .earn-money-info {
-  margin: 0 20px 0 20px;
+  margin: 0 auto;
+  max-width: 400px;
 }
 
 .earn-money-info p {
@@ -280,13 +282,12 @@ body {
   display: flex;
   flex-direction: column;
   padding-top: 50px;
-  justify-content: space-between;
 }
 
 .index4-info-container {
   display: flex;
   max-width: 500px;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: column;
 }
 
