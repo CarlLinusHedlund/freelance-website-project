@@ -19,8 +19,8 @@ body {
 }
 
 .mask1 {
-  -webkit-mask-image: url(../Images/svgs/herobanner-blob.svg);
-  mask-image: url(../Images/svgs/herobanner-blob.svg);
+  -webkit-mask-image: url(../images/svgs/herobanner-blob.svg);
+  mask-image: url(../images/svgs/herobanner-blob.svg);
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   fill: var(--jobless-primary);
@@ -156,7 +156,7 @@ body {
 }
 
 .index2-container {
-  background-image: url(../Images/images/sand-texture.jpg);
+  background-image: url(../Images/img/sand-texture.jpg);
   background-size: cover;
   background-position: bottom;
   height: 750px;
