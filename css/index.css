@@ -209,7 +209,7 @@ body {
   border: var(--BTN-border-white-jobless);
   width: 80%;
   max-width: 280px;
-  min-width: 250px;
+  min-width: 200px;
   height: var(--BTN-height-small-jobless);
   border-radius: 15px;
   display: flex;
@@ -234,7 +234,7 @@ body {
 .index2-mockup-container img {
   height: 333px;
   width: 319px;
-  margin-left: 20px;
+  margin-left: 60px;
 }
 
 .index3-container {
@@ -257,13 +257,21 @@ body {
 }
 
 .index3-card-header i {
-  font-size: 1.5em;
+  font-size: 2em;
   color: var(--jobless-green);
+}
+
+.index3-card-info p {
+  margin-left: 50px;
 }
 
 .index4-container {
   height: 650px;
   background: var(--jobless-lightgrey);
+}
+
+.index4-container .bottom-wave {
+  margin-bottom: 100px;
 }
 
 .index4-container .inner {

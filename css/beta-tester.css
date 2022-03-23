@@ -3,7 +3,7 @@ body {
 }
 .beta-tester {
   background-image: url(../images/img/black-texture2.jpg);
-  height: 400px;
+  height: 500px;
   background-position: center;
   background-size: cover;
   display: flex;
