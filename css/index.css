@@ -3,10 +3,10 @@ body {
 }
 
 .banner-container {
-  padding: 200px 20px 20px 20px;
+  padding: 100px 20px 20px 20px;
   position: relative;
   height: 350px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 .heading-container {
@@ -112,12 +112,18 @@ body {
   margin-bottom: 100px;
 }
 
-.index1-container {
+.index1-container,
+.index4-container {
   background: var(--jobless-lightgrey);
 }
 
 .index1-info-container {
   height: 700px;
+}
+
+.index4-info-container {
+  padding-top: 70px;
+  margin: 0 auto;
 }
 
 .earn-money-bg {
@@ -270,18 +276,22 @@ body {
   background: var(--jobless-lightgrey);
 }
 
-.index4-container .bottom-wave {
-  margin-bottom: 100px;
-}
-
 .index4-container .inner {
   display: flex;
   flex-direction: column;
   padding-top: 50px;
+  justify-content: space-between;
 }
 
 .index4-info-container {
-  max-width: 400px;
+  display: flex;
+  max-width: 500px;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.see-how-btn-index4 {
+  margin-top: 20px;
 }
 
 .animated {
