@@ -2,7 +2,7 @@ body {
   font-family: var(--secondary-font);
 }
 .beta-tester {
-  background-image: url(../Images/images/black-texture2.jpg);
+  background-image: url(../Images/img/black-texture2.jpg);
   height: 400px;
   background-position: center;
   background-size: cover;
@@ -26,6 +26,7 @@ body {
 .email-betatester {
   border-radius: 8px;
   padding: 8px;
+  color: #e2e2e2;
   border: 1px solid #e2e2e2;
   background-color: transparent;
 }
