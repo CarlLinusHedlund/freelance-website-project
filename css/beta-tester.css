@@ -2,8 +2,8 @@ body {
   font-family: var(--secondary-font);
 }
 .beta-tester {
-  background-image: url(../Images/images/black-texture2.jpg);
-  height: 400px;
+  background-image: url(../images/img/black-texture2.jpg);
+  height: 500px;
   background-position: center;
   background-size: cover;
   display: flex;
