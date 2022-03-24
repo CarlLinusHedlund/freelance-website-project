@@ -1,0 +1,484 @@
+body {
+  background-color: var(--jobless-white);
+}
+
+.banner-container {
+  padding: 100px 0 0 0;
+  position: relative;
+  height: 350px;
+  margin-bottom: 100px;
+}
+
+.heading-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  width: 280px;
+  justify-content: space-between;
+}
+
+.button-container a {
+  text-decoration: none;
+  font-family: var(--secondary-font);
+  width: 100%;
+}
+
+.mask1 {
+  display: none;
+}
+
+.btn {
+  width: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: var(--BTN-radius-jobless);
+  cursor: pointer;
+  height: var(--BTN-height-small-jobless);
+}
+
+.readmore {
+  border: var(--BTN-border-jobless);
+  box-shadow: var(--jobless-shadow);
+}
+
+.readmore:hover {
+  background: var(--jobless-primary);
+  border: none;
+  transition: 250ms;
+}
+
+.readmore:hover a {
+  color: var(--jobless-white);
+}
+
+.readmore a {
+  color: var(--jobless-black);
+  font-size: 0.9em;
+}
+
+.betatest {
+  background: var(--jobless-primary);
+  box-shadow: var(--jobless-shadow);
+}
+
+.betatest:hover {
+  background: none;
+  border: var(--BTN-border-jobless);
+  transition: 250ms;
+}
+
+.betatest a {
+  color: var(--jobless-white);
+  font-size: 0.9em;
+}
+
+.betatest:hover a {
+  color: var(--jobless-black);
+}
+
+.wave {
+  fill: var(--jobless-lightgrey);
+  position: relative;
+  top: 5px;
+}
+
+.wave-bottom {
+  fill: var(--jobless-lightgrey);
+  position: relative;
+  filter: drop-shadow(10px 10px 50px rgba(0, 0, 0, 0.247));
+}
+
+.bottom-wave {
+  margin-bottom: 100px;
+}
+
+.index1-container,
+.index4-container {
+  background: var(--jobless-lightgrey);
+}
+
+.index1-info-container {
+  height: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.index4-info-container {
+  padding-top: 70px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+}
+
+.earn-money-bg {
+  fill: var(--jobless-lightgrey);
+}
+
+.earn-money-storypik {
+  width: 100%;
+  height: 400px;
+}
+
+.earn-money-info {
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+.earn-money-info p {
+  font-family: var(--secondary-font);
+}
+
+.see-how-btn {
+  border: var(--BTN-border-jobless);
+  width: 250px;
+  height: var(--BTN-height-small-jobless);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 250ms;
+}
+
+.see-how-btn:hover {
+  background: var(--jobless-primary);
+  border: none;
+}
+.see-how-btn:hover a {
+  color: var(--jobless-white);
+}
+
+.see-how-btn a {
+  text-decoration: none;
+  color: var(--jobless-darkishgray);
+  font-weight: 700;
+}
+
+.index2-container {
+  background-image: url(../images/img/man-chilling-in-the-sun.jpg);
+  background-size: cover;
+  background-position: -200px 0;
+  height: 550px;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+.index2-container .inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 680px;
+}
+
+.index2-container * {
+  position: relative;
+  z-index: 3;
+  overflow: hidden;
+}
+
+.index2-info-container {
+  color: var(--jobless-white);
+  display: flex;
+  flex-direction: column;
+  margin-top: 75px;
+  max-width: 450px;
+  width: 100%;
+  align-items: center;
+}
+
+.index2-info-container h2 {
+  font-size: var(--fontsize-h2-desktop);
+  font-weight: 500;
+}
+
+.index2-info-container p {
+  font-weight: 400;
+  font-size: 15px;
+  max-width: 350px;
+}
+
+.index3-img-container {
+  display: none;
+}
+
+.text-flex {
+  text-align: center;
+  margin: 5px;
+  max-width: 400px;
+}
+
+.index2-info-container a {
+  color: var(--jobless-white);
+  text-decoration: none;
+}
+
+.index2-see-how-btn {
+  border: var(--BTN-border-white-jobless);
+  width: 80%;
+  max-width: 280px;
+  min-width: 200px;
+  height: var(--BTN-height-small-jobless);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 250ms;
+  margin-top: 20px;
+}
+
+.index2-container::after {
+  background-color: var(--jobless-dark);
+  z-index: 2;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 40%;
+}
+
+.index2-mockup-container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.macbook-mockup {
+  height: 333px;
+  width: 319px;
+  margin-left: 60px;
+}
+
+.index3-container {
+  margin-top: 150px;
+}
+
+.index3-info-container {
+  margin: 0 auto;
+}
+
+.index3-card-container {
+  max-width: 450px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.index3-card-header {
+  display: flex;
+  align-items: center;
+  font-size: 1.1em;
+  gap: 20px;
+}
+
+.index3-card-header h2 {
+  font-weight: 500;
+}
+
+.index3-card-header i {
+  font-size: 2em;
+  color: var(--jobless-green);
+}
+
+.index3-card-info p {
+  margin-left: 50px;
+}
+
+.index4-container {
+  height: 650px;
+  background: var(--jobless-lightgrey);
+}
+
+.index4-container .inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.index4-info-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 0;
+}
+
+.see-how-btn-index4 {
+  margin-top: 20px;
+}
+
+.animated {
+  max-width: 450px;
+}
+
+svg#freepik_stories-resume:not(.animated) .animable {
+  opacity: 0;
+}
+svg#freepik_stories-resume.animated #freepik--Device--inject-118 {
+  animation: 3s Infinite linear floating;
+  animation-delay: 0s;
+}
+svg#freepik_stories-resume.animated #freepik--graduation-cap--inject-118 {
+  animation: 6s Infinite linear floating;
+  animation-delay: 0s;
+}
+svg#freepik_stories-resume.animated #freepik--speech-bubbles--inject-118 {
+  animation: 6s Infinite linear floating;
+  animation-delay: 0s;
+}
+@keyframes floating {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .beta-tester {
+    height: 600px;
+  }
+  .betatester-hero-text {
+    font-size: 45px;
+  }
+  .email-submit {
+    flex-direction: row;
+    width: 100%;
+    max-width: 650px;
+  }
+  .email-betatester {
+    width: 100%;
+  }
+
+  .mask1 {
+    display: block;
+    width: 40%;
+  }
+
+  .heading-info-container {
+    width: 60%;
+  }
+
+  .heading-info-container h1 {
+    font-size: 40px;
+  }
+
+  .heading-info-container p {
+    font-size: 24px;
+  }
+
+  .mask1 img {
+    width: 100%;
+  }
+
+  .button-container {
+    width: 340px;
+  }
+
+  .btn {
+    width: 160px;
+  }
+
+  .index1-info-container {
+    margin-top: 200px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .index2-container {
+    background-position: bottom;
+  }
+
+  .index2-container .inner {
+    align-items: flex-start;
+  }
+
+  .index2-info-container {
+    max-width: 550px;
+    align-items: flex-start;
+    margin-left: 50px;
+  }
+
+  .index2-info-container h2 {
+    text-align: left;
+    font-size: 40px;
+  }
+
+  .bottom-wave,
+  .wave {
+    display: none;
+  }
+
+  .earn-money-storypik,
+  .earn-money-info {
+    width: 50%;
+    max-width: 450px;
+  }
+
+  .earn-money-info {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .text-flex {
+    text-align: left;
+  }
+
+  .index3-container .inner {
+    display: flex;
+  }
+
+  .index3-img-container img {
+    width: 100%;
+  }
+
+  .index3-img-container {
+    width: 40%;
+    display: block;
+  }
+
+  .index3-info-container {
+    width: 60%;
+  }
+
+  .index4-container {
+    height: 400px;
+    margin-top: 100px;
+  }
+
+  .index4-info-container {
+    flex-direction: row;
+    margin: 0;
+    height: 100%;
+  }
+
+  .index4-storyset {
+    width: 50%;
+  }
+
+  .earn-money-info h2 {
+    font-size: var(--fontsize-h2-desktop);
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .index2-container {
+    background-position: center;
+  }
+}
