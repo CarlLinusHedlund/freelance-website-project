@@ -113,7 +113,9 @@ body {
 
 .index4-info-container {
   padding-top: 70px;
-  margin: 0 auto;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
 }
 
 .earn-money-bg {
@@ -203,6 +205,10 @@ body {
   max-width: 350px;
 }
 
+.index3-img-container {
+  display: none;
+}
+
 .text-flex {
   text-align: center;
   margin: 5px;
@@ -262,6 +268,7 @@ body {
 .index3-card-container {
   max-width: 450px;
   margin: 0 auto;
+  padding-bottom: 20px;
 }
 
 .index3-card-header {
@@ -292,14 +299,14 @@ body {
 .index4-container .inner {
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
 }
 
 .index4-info-container {
   display: flex;
-  max-width: 500px;
   justify-content: space-around;
   flex-direction: column;
+  margin: 0 auto;
+  padding-top: 0;
 }
 
 .see-how-btn-index4 {
@@ -424,14 +431,13 @@ svg#freepik_stories-resume.animated #freepik--speech-bubbles--inject-118 {
 
   .earn-money-info {
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .text-flex {
     text-align: left;
-  }
-
-  .macbook-mockup {
-    margin-left: 0;
   }
 
   .index3-container .inner {
@@ -444,10 +450,30 @@ svg#freepik_stories-resume.animated #freepik--speech-bubbles--inject-118 {
 
   .index3-img-container {
     width: 40%;
+    display: block;
   }
 
   .index3-info-container {
     width: 60%;
+  }
+
+  .index4-container {
+    height: 400px;
+    margin-top: 100px;
+  }
+
+  .index4-info-container {
+    flex-direction: row;
+    margin: 0;
+    height: 100%;
+  }
+
+  .index4-storyset {
+    width: 50%;
+  }
+
+  .earn-money-info h2 {
+    font-size: var(--fontsize-h2-desktop);
   }
 }
 
