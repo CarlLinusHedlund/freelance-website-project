@@ -83,27 +83,6 @@ body {
   color: var(--jobless-black);
 }
 
-.used-of-banner {
-  border: 2px solid var(--jobless-lightgrey);
-  background: #eeeeee34;
-}
-
-.used-of-banner .inner {
-  display: flex;
-  flex-direction: row;
-  gap: 50px;
-}
-
-.used-of-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.used-of-logo img {
-  max-height: 50px;
-}
-
 .wave {
   fill: var(--jobless-lightgrey);
   position: relative;
@@ -128,6 +107,8 @@ body {
 .index1-info-container {
   height: 700px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .index4-info-container {
@@ -359,27 +340,49 @@ svg#freepik_stories-resume.animated #freepik--speech-bubbles--inject-118 {
 
   .mask1 {
     display: block;
+    width: 40%;
   }
 
   .heading-info-container {
+    width: 60%;
+  }
+
+  .heading-info-container h1 {
+    font-size: 40px;
+  }
+
+  .mask1 img {
+    width: 100%;
+  }
+
+  .button-container {
+    width: 340px;
+  }
+
+  .btn {
+    width: 160px;
+  }
+
+  .index1-info-container {
+    margin-top: 200px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bottom-wave,
+  .wave {
+    display: none;
+  }
+
+  .earn-money-storypik,
+  .earn-money-info {
+    width: 50%;
     max-width: 450px;
   }
 
-  /* .mask1 {
-    -webkit-mask-image: url(../images/svgs/herobanner-blob.svg);
-    mask-image: url(../images/svgs/herobanner-blob.svg);
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    fill: var(--jobless-primary);
-    height: 350px;
-    width: 320px;
-    position: absolute;
-    right: 100px;
-    background-color: var(--jobless-primary);
-  } */
-
-  .mask1 img {
-    height: 340px;
-    width: 330px;
+  .earn-money-info {
+    margin: 0;
   }
 }
