@@ -44,7 +44,7 @@
 .inner {
   padding-left: 20px;
   padding-right: 20px;
-  max-width: 1024px;
+  max-width: 1440px;
 }
 
 .m0 {
@@ -57,4 +57,7 @@
 
 .h-font {
   font-family: var(--heading-font);
+}
+.sh {
+  box-shadow: var(--jobless-shadow);
 }

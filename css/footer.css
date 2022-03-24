@@ -6,14 +6,17 @@ body {
   margin: 0;
   padding: 0;
 }
-.footer-container {
+footer {
+  background-color: var(--jobless-darkishgray);
+}
+
+footer .inner {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   color: var(--jobless-white);
-  background-color: var(--jobless-darkishgray);
-  align-items: center;
   padding: 60px;
+  width: 100%;
 }
 .client-toogle,
 .talent-toogle,
@@ -66,7 +69,6 @@ body {
 }
 .socials {
   border-bottom: 2px solid #bfbfbf;
-  width: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
   display: flex;
@@ -83,7 +85,6 @@ body {
 }
 .policy {
   display: flex;
-  width: 100%;
   align-items: baseline;
   margin-top: 30px;
   flex-direction: column-reverse;
