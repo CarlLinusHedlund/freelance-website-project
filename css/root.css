@@ -47,6 +47,7 @@
   max-width: 1024px;
 }
 
+/* class shortcuts */
 .m0 {
   margin: 0;
 }
@@ -57,4 +58,12 @@
 
 .h-font {
   font-family: var(--heading-font);
+}
+
+.dark-text {
+  color: var(--jobless-dark);
+}
+
+.white-text {
+  color: var(--jobless-white);
 }
