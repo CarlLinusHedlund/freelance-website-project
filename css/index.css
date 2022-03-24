@@ -3,7 +3,7 @@ body {
 }
 
 .banner-container {
-  padding: 100px 20px 20px 20px;
+  padding: 100px 0 0 0;
   position: relative;
   height: 350px;
   margin-bottom: 100px;
@@ -160,11 +160,12 @@ body {
 }
 
 .index2-container {
-  background-image: url(../images/img/sand-texture.jpg);
+  background-image: url(../images/img/man-chilling-in-the-sun.jpg);
   background-size: cover;
-  background-position: bottom;
-  height: 750px;
+  background-position: -200px 0;
+  height: 550px;
   position: relative;
+  background-repeat: no-repeat;
 }
 
 .index2-container .inner {
@@ -185,10 +186,21 @@ body {
   color: var(--jobless-white);
   display: flex;
   flex-direction: column;
-  margin: 75px 20px 0 20px;
+  margin-top: 75px;
   max-width: 450px;
-  width: 80%;
+  width: 100%;
   align-items: center;
+}
+
+.index2-info-container h2 {
+  font-size: var(--fontsize-h2-desktop);
+  font-weight: 500;
+}
+
+.index2-info-container p {
+  font-weight: 400;
+  font-size: 15px;
+  max-width: 350px;
 }
 
 .text-flex {
@@ -228,7 +240,12 @@ body {
   opacity: 40%;
 }
 
-.index2-mockup-container img {
+.index2-mockup-container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.macbook-mockup {
   height: 333px;
   width: 319px;
   margin-left: 60px;
@@ -351,6 +368,10 @@ svg#freepik_stories-resume.animated #freepik--speech-bubbles--inject-118 {
     font-size: 40px;
   }
 
+  .heading-info-container p {
+    font-size: 24px;
+  }
+
   .mask1 img {
     width: 100%;
   }
@@ -371,6 +392,25 @@ svg#freepik_stories-resume.animated #freepik--speech-bubbles--inject-118 {
     align-items: center;
   }
 
+  .index2-container {
+    background-position: bottom;
+  }
+
+  .index2-container .inner {
+    align-items: flex-start;
+  }
+
+  .index2-info-container {
+    max-width: 550px;
+    align-items: flex-start;
+    margin-left: 50px;
+  }
+
+  .index2-info-container h2 {
+    text-align: left;
+    font-size: 40px;
+  }
+
   .bottom-wave,
   .wave {
     display: none;
@@ -384,5 +424,35 @@ svg#freepik_stories-resume.animated #freepik--speech-bubbles--inject-118 {
 
   .earn-money-info {
     margin: 0;
+  }
+
+  .text-flex {
+    text-align: left;
+  }
+
+  .macbook-mockup {
+    margin-left: 0;
+  }
+
+  .index3-container .inner {
+    display: flex;
+  }
+
+  .index3-img-container img {
+    width: 100%;
+  }
+
+  .index3-img-container {
+    width: 40%;
+  }
+
+  .index3-info-container {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .index2-container {
+    background-position: center;
   }
 }

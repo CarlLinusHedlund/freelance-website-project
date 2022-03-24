@@ -26,6 +26,12 @@
   --BTN-height-small-jobless: 40px;
   --BTN-border-jobless: 2px solid #000;
   --BTN-border-white-jobless: 2px solid #fff;
+
+  /*Font sizes*/
+  --fontsize-H1-mobile: 40px;
+  --fontsize-H1-desktop: 46px;
+  --fontsize-h2-desktop: 30px;
+  --fontsize-h2-mobile: 24px;
 }
 * {
   box-sizing: border-box;
@@ -43,4 +49,12 @@
 
 .m0 {
   margin: 0;
+}
+
+.s-font {
+  font-family: var(--secondary-font);
+}
+
+.h-font {
+  font-family: var(--heading-font);
 }
