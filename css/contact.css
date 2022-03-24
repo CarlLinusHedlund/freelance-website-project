@@ -1,68 +1,16 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-.contact-info {
-    padding: 30px 20px 70px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 48px;
+.contact-container {
+  background-image: url(../images/img/black-texture2.jpg);
+  height: 1000px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.contact-info p {
-    font-family: var(--secondary-font);
-    color: var(--jobless-primary);
-}
-.contact-info .top-info {
-    font-size: 18px;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-.contact-info .top-info h1 {
-    font-family: var(--heading-font);
-    color: var(--jobless-primary);
-    font-size: 36px;
-}
-.contact-info .top-info p {
-    max-width: 291px;
-}
-.contact-info .bottom-info {
-    font-size: 14px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-.contact-info .bottom-info span {
-    margin: 16px 0;
-    display: flex;
-    justify-content: space-between;
-    width: 200px;
-}
-.contact-info .bottom-info span .fa-brands {
-    color: var(--jobless-primary);
-    font-size: 25px;
-}
-/* responsive stoof */
-/* min-width: 768*/
-@media screen and (min-width: 768px) {
-    .contact-page-main {
-        display: flex;
-        overflow: hidden;
-    }
-    .contact-info {
-        flex: 1;
-        height: 516px;
-    }
-}
-@media screen and (max-width: 500px) {
-    .contact-info .top-info h1 {
-        max-width: 285px;
-    }
-}
-@media screen and (max-width: 1050px) and (min-width: 768px) {
-    .contact-info .top-info h1 {
-        max-width: 285px;
-    }
+
+.contact-form-header h1,
+.contact-form-header p {
+  color: var(--jobless-white);
 }
