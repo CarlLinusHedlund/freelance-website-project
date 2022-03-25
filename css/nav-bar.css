@@ -106,8 +106,7 @@ header .inner {
     display: flex;
     justify-content: center;
 }
-.dark-header,
-.dark-header a {
+.dark-header {
     color: var(--jobless-white);
     background-color: #0c0c0c;
 }
@@ -120,6 +119,12 @@ header .inner {
     color: var(--jobless-green);
 }
 .dark-header .fa-bars {
+    color: var(--jobless-white);
+}
+.dark-header .mobile-nav {
+    background-color: #0c0c0c;
+}
+.dark-header .mobile-nav a {
     color: var(--jobless-white);
 }
 @media screen and (min-width: 769px) {
@@ -149,5 +154,8 @@ header .inner {
     }
     .mobile-nav {
         display: none;
+    }
+    .dark-header a {
+        color: var(--jobless-white);
     }
 }
