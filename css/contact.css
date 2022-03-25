@@ -90,6 +90,11 @@
   width: 80%;
   max-width: 395px;
 }
+.input-name-container label,
+.input-email-container label,
+.input-message-container label {
+  padding-left: 5px;
+}
 
 .other-contact {
   margin-top: 50px;
