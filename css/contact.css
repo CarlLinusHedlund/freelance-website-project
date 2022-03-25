@@ -288,3 +288,10 @@ header .inner {
     top: 70px;
   }
 }
+
+@media screen and (min-width: 1100px) {
+  .blob1 {
+    top: 630px;
+    left: -190px;
+  }
+}
