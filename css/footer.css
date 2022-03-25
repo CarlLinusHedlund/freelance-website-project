@@ -7,13 +7,15 @@ body {
   padding: 0;
 }
 .footer-container {
+  color: var(--jobless-white);
+  background-color: var(--jobless-darkishgray);
+  padding: 20px;
+}
+.footer-container .inner {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: var(--jobless-white);
-  background-color: var(--jobless-darkishgray);
   align-items: center;
-  padding: 60px;
 }
 .client-toogle,
 .talent-toogle,

@@ -16,7 +16,6 @@ header .inner {
   justify-content: space-between;
   height: 100px;
   align-items: center;
-  background-color: var(--jobless-white);
   color: var(--jobless-dark);
   font-weight: 500;
 }
@@ -27,6 +26,7 @@ header .inner {
 }
 .fa-bars {
   font-size: 36px;
+  cursor: pointer;
 }
 .logo {
   font-size: 28px;
@@ -46,7 +46,6 @@ header .inner {
   display: none;
 }
 .nav-link {
-  background-color: var(--jobless-white);
   color: var(--jobless-dark);
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
@@ -58,23 +57,20 @@ header .inner {
   border-radius: 5px;
   font-size: 12px;
 }
-#logg-på {
-  border: none;
-  background-color: var(--jobless-white);
-  color: var(--jobless-dark);
-  margin-right: 15px;
-  margin-left: 20px;
+.sign-up-button {
   display: none;
 }
-#bli-med {
-  border: transparent;
+.join-button {
   border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 5px;
   width: 100px;
   color: var(--jobless-white);
   background-color: #eca63d;
-  height: 30px;
   font-weight: 700;
+  cursor: pointer;
 }
 .mobile-nav {
   display: flex;
@@ -100,14 +96,29 @@ header .inner {
   background-color: var(--jobless-white);
   color: var(--jobless-dark);
   font-weight: 700;
+  display: flex;
+  justify-content: center;
+}
+.dark-header,
+.dark-header a {
+  color: var(--jobless-white);
+  background-color: #0c0c0c;
+}
+.dark-header .logo {
+  color: var(--jobless-green);
+}
+.dark-header .join-button {
+  border: 2px solid var(--jobless-green);
+  background-color: transparent;
+  color: var(--jobless-green);
+}
+.dark-header .fa-bars {
+  color: var(--jobless-white);
 }
 @media screen and (min-width: 769px) {
-  .inner {
-    margin: 0 auto;
-    max-width: 1440px;
-  }
   .nav {
     display: flex;
+    gap: 20px;
   }
   .desktop-nav {
     display: flex;
@@ -119,10 +130,14 @@ header .inner {
     display: none;
   }
   #logg-på {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
   }
   .user-nav-container {
     display: flex;
+    gap: 20px;
   }
   .mobile-nav {
     display: none;
