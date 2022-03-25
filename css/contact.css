@@ -199,6 +199,8 @@ header .inner {
   .contact-container .inner {
     display: flex;
     flex-direction: row;
+    z-index: 10;
+    overflow: visible;
   }
 
   .contact-form-container {
@@ -224,24 +226,65 @@ header .inner {
     width: 50%;
   }
 
-  .contact-container::after {
-    display: none;
-  }
-
   .input-email-container,
   .input-name-container {
     width: 70%;
+    max-width: 280px;
   }
 
-  .input-message-container {
-    width: 100%;
+  .input-message-container,
+  .message-input {
+    width: 400px;
+    height: 140px;
   }
 
   .form-control {
     height: 40px;
   }
 
-  .message-input {
+  .contact-container::after {
+    background: linear-gradient(
+      90deg,
+      rgba(12, 12, 12, 0) 0%,
+      rgba(12, 12, 12, 0) 32%,
+      rgba(12, 12, 12, 0.8791165014164306) 54%,
+      rgba(12, 12, 12, 1) 100%
+    );
+    content: "";
+    z-index: 2;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
     width: 100%;
+    opacity: 100%;
+  }
+
+  .contact-img {
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    top: 90px;
+    right: -10px;
+  }
+
+  .blob2 {
+    top: 100px;
+  }
+
+  .blob1 {
+    top: 480px;
+    left: -150px;
+  }
+}
+
+@media screen and (min-width: 770px) and (max-width: 882px) {
+  .blob1 {
+    top: 380px;
+  }
+
+  .blob2 {
+    top: 70px;
   }
 }

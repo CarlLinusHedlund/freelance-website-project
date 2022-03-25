@@ -93,8 +93,9 @@
                     Eller kontakt oss på telefon.</p>
             </div>
             <div class="contact-form-wrapper">
-                <form action="" name="contact" method="post" data-netlify="true" onsubmit="SubmitEvent">
+                <form netlify name="contact" method="post" data-netlify="true" onsubmit="SubmitEvent" data-netlify-honeypot="bot-field">
                     <div class="input-container">
+                        <input class="hide" name="bot-field">
                         <div class="input-name-container">
                             <label class="m0 s-font white-text" for="name">Navn</label>
                             <input type="text" class="form-control" id="name" name="name">
@@ -107,7 +108,7 @@
                             <label for="messageInput" class="white-text s-font">Din Melding</label>
                             <textarea class="message-input" name="message" id="messageInput"  rows="10"></textarea>
                         </div>
-                        <button type="submit" class="submit-button ">Send Melding</button>
+                        <button type="submit" class="submit-button">Send Melding</button>
                     </div>
                 </form>
             </div>
