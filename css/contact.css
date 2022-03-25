@@ -3,13 +3,17 @@
   padding: 0;
 }
 
+header {
+  background-color: var(--jobless-dark);
+}
 .contact-container .inner {
   position: relative;
 }
 
 .contact-container {
   background-image: url(../images/img/black-texture2.jpg);
-  height: 1100px;
+  height: 100%;
+  padding-bottom: 10px;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -78,6 +82,7 @@
 }
 
 .input-container {
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -178,7 +183,7 @@ header .inner {
   font-size: 1.5em;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .input-name-container,
   .input-email-container,
   .input-message-container {
@@ -191,4 +196,52 @@ header .inner {
 }
 
 @media screen and (min-width: 769px) {
+  .contact-container .inner {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact-form-container {
+    width: 50%;
+  }
+
+  .contact-form-wrapper {
+    width: 100%;
+    margin: 0;
+  }
+
+  .contact-form-wrapper form {
+    width: 100%;
+  }
+
+  .input-container {
+    margin-top: 100px;
+    width: 100%;
+  }
+
+  .contact-img-container {
+    position: relative;
+    width: 50%;
+  }
+
+  .contact-container::after {
+    display: none;
+  }
+
+  .input-email-container,
+  .input-name-container {
+    width: 70%;
+  }
+
+  .input-message-container {
+    width: 100%;
+  }
+
+  .form-control {
+    height: 40px;
+  }
+
+  .message-input {
+    width: 100%;
+  }
 }
