@@ -9,7 +9,7 @@
 
 .contact-container {
   background-image: url(../images/img/black-texture2.jpg);
-  height: 1000px;
+  height: 1100px;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -93,6 +93,10 @@
 
 .other-contact {
   margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .form-control {
@@ -109,10 +113,15 @@
 }
 
 .submit-button {
-  width: 300px;
+  width: 70%;
+  max-width: 300px;
+  min-width: 200px;
   height: 50px;
   border-radius: 15px;
   background-color: #92e3a9;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
 }
 
 .header-container {
@@ -134,4 +143,27 @@ header .inner {
 #bli-med {
   background-color: #92e3a9;
   color: var(--jobless-dark);
+}
+
+.social-media-container {
+  margin-top: 50px;
+  display: flex;
+  gap: 30px;
+}
+
+.social-media-container i {
+  font-size: 2em;
+  margin-top: 20px;
+}
+
+.jobless-phone,
+.jobless-mail {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.fa-at,
+.fa-phone {
+  font-size: 1.5em;
 }
