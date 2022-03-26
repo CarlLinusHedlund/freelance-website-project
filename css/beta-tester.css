@@ -26,6 +26,7 @@ body {
 .email-betatester {
   border-radius: 8px;
   padding: 8px;
+  color: #e2e2e2;
   border: 1px solid #e2e2e2;
   background-color: transparent;
 }

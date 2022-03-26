@@ -6,17 +6,16 @@ body {
   margin: 0;
   padding: 0;
 }
-footer {
+.footer-container {
+  color: var(--jobless-white);
   background-color: var(--jobless-darkishgray);
+  padding: 20px;
 }
-
-footer .inner {
+.footer-container .inner {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: var(--jobless-white);
-  padding: 60px;
-  width: 100%;
+  align-items: center;
 }
 .client-toogle,
 .talent-toogle,
