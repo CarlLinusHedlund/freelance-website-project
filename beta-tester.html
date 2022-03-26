@@ -17,9 +17,10 @@
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/nav-bar.css" />
     <link rel="stylesheet" href="./css/footer.css" />
-    <link rel="stylesheet" href="./css/beta-teste-site.css" />
     <link rel="stylesheet" href="./css/beta-tester.css" />
+    <link rel="stylesheet" href="./css/beta-teste-site.css" />
     <link rel="stylesheet" href="./css/root.css" />
+    <script src="/js/responsiveNav.js" defer></script>
     <title>Find jobb - Jobless</title>
   </head>
   <body>
@@ -69,17 +70,106 @@
     <main>
       <div class="hero">
         <div class="inner">
-          <div></div>
+          <div class="hero-info">
+            <div>
+              <h1>Bli En <br /><span>Betatester</span></h1>
+              <p class="hero-text">
+                Bli en av de første til få prøve Scandinavias neste store
+                jobbplatform
+              </p>
+            </div>
+            <a class="hero-button-link" href="#email-list"
+              ><button class="hero-button">Sett deg opp på liste</button></a
+            >
+          </div>
           <div class="jobless-beta-container">
-            <div>job<span>less.</span></div>
-            <div>beta</div>
+            <div class="jobless-beta-logo">
+              <div class="logo"><span>job</span>less.</div>
+              <div class="beta">beta</div>
+            </div>
           </div>
         </div>
       </div>
-      <section class=""></section>
-      <section class=""></section>
-      <section class=""></section>
-      <section class=""></section>
+      <section class="make-your-profile">
+        <div class="inner">
+          <div class="make-profile-info">
+            <h2>
+              Sett Enkelt Opp
+              <div>Din Profil</div>
+            </h2>
+            <p>
+              Sett enkelt opp din jobess. profil og vis dine fremtidige klienter
+              noe av ditt arbeid. Sett opp produkter og selg fra dag 1
+            </p>
+          </div>
+          <div class="profile-example">
+            <img
+              src="/Images/mockups/jobless-beta-mobile.png"
+              alt=""
+              class="jobless-beta-mobile-version"
+            />
+            <img
+              src="/Images/mockups/jobless-beta-desktop.png"
+              alt=""
+              class="jobless-beta-desktop-version"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="earn-beta">
+        <div class="inner">
+          <div class="earn-money-info">
+            <h2>
+              Bruk ditt talent,
+              <div>Tjen Penger</div>
+            </h2>
+            <p>
+              Selg dine produkter og tjen penger ! Hold styr på økonomien og
+              følg med på din økonomiskeutvikling
+            </p>
+          </div>
+          <div class="chart-example">
+            <img
+              src="/Images/mockups/chart-beta.svg"
+              alt=""
+              class="chart-beta"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="find-bugs-beta">
+        <div class="inner">
+          <div class="find-bugs-info">
+            <h2>
+              Hjelp oss med
+              <div>å finne bugs</div>
+            </h2>
+            <p>
+              Hjelp oss med å finne bug, og få <b>Pluss+ medlemskap</b> når vi
+              slipper jobless. 1.0
+            </p>
+          </div>
+          <div class="bugs-button-container">
+            <div class="bugs-button">
+              <i class="fa-solid fa-bug"></i> <span>rapportere feil</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="email-list" id="email-list"></section>
+      <div class="beta-tester">
+        <div class="inner">
+        <h3 class="betatester-hero-text">Bli vår fremtidige <span>Betatester</span></h3>
+        <form class="email-submit" method="post" data-netlify="true" name="beta-tester">
+          <input
+            class="email-betatester"
+            type="text"
+            placeholder="Your email"
+          />
+          <button class="submit-betatester" type="submit">submit</button>
+        </div>
+      </div>
+      </div>
     </main>
     <footer>
       <div class="footer-container">
