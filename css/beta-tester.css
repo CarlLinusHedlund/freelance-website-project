@@ -24,16 +24,11 @@ body {
   gap: 10px;
 }
 .email-betatester {
-  border-radius: 8px;
-  padding: 8px;
-  color: #e2e2e2;
-  border: 1px solid #e2e2e2;
+  border: 2px solid var(--jobless-green);
+  border-radius: 15px;
+  padding: 20px;
+  width: 100%;
   background-color: transparent;
-}
-.submit-betatester {
-  border: none;
-  background-color: transparent;
-  color: #e2e2e2;
 }
 .betatester-info {
   color: #e2e2e2;
@@ -41,6 +36,20 @@ body {
 .hjelp-oss {
   text-decoration: none;
   color: var(--jobless-white);
+}
+.email-submit {
+  width: 100%;
+}
+.submit-betatester {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: var(--jobless-green);
+  color: #0c0c0c;
+  font-weight: 800;
+  border: none;
+}
+.betatester-hero-text span {
+  color: var(--jobless-green);
 }
 @media screen and (min-width: 769px) {
   .beta-tester {
