@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="./css/nav-bar.css" />
     <link rel="stylesheet" href="./css/root.css" />
     <link rel="stylesheet" href="./css/index.css" />
+    <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
     <header>
@@ -52,9 +53,6 @@
               <span>NO</span>
               <i class="fa-solid fa-globe"></i>
             </div>
-            <a href="#" class="user-nav sign-up-button" id="mobile-logg-på"
-              >Logg På</a
-            >
           </div>
           <div class="nav">
             <div class="desktop-nav">
@@ -79,10 +77,8 @@
               </div>
             </div>
             <div class="user-nav-container">
-              <a href="#" class="user-nav sign-in-button" id="logg-på"
-                >Logg På</a
-              >
-              <button class="user-nav join-button" id="bli-med">Bli Med</button>
+              <button class="user-nav join-button" id="bli-med" data-netlify-identity-button>
+              </button>
             </div>
           </div>
         </div>
