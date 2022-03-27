@@ -1,5 +1,5 @@
 .about-hero-banner {
-  background-image: url(../Images/images/blue-texture.jpg);
+  background-image: url(../Images/img/blue-texture.jpg);
   height: 500px;
   width: 100%;
   color: var(--jobless-white);
@@ -63,6 +63,9 @@
     max-width: 700px;
     margin-top: 100px;
   }
+  .about-hero-banner h1 {
+    font-size: 50px;
+  }
   .sikkerhet,
   .inntekt,
   .rettferdighet {
@@ -72,5 +75,17 @@
   }
   .rettferdighet {
     margin-bottom: 100px;
+  }
+  .about-text h2 {
+    font-size: 36px;
+  }
+  .about-text p {
+    font-size: 20px;
+  }
+  .value-container h2 {
+    font-size: 34px;
+  }
+  .value-container h3 {
+    font-size: 30px;
   }
 }

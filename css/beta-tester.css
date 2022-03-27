@@ -2,7 +2,7 @@ body {
   font-family: var(--secondary-font);
 }
 .beta-tester {
-  background-image: url(../images/img/black-texture2.jpg);
+  background-image: url(../Images/img/black-texture2.jpg);
   height: 500px;
   background-position: center;
   background-size: cover;
@@ -37,6 +37,10 @@ body {
 }
 .betatester-info {
   color: #e2e2e2;
+}
+.hjelp-oss {
+  text-decoration: none;
+  color: var(--jobless-white);
 }
 @media screen and (min-width: 769px) {
   .beta-tester {
