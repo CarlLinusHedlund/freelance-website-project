@@ -190,9 +190,14 @@ main {
     display: flex;
     color: var(--jobless-green);
   }
-  .jobless-beta-logo .logo {
+  .jobless-beta-logo .hero-logo {
+    font-family: var(--secondary-font);
     font-size: 70px;
   }
+  .jobless-beta-logo .hero-logo span {
+    font-style: italic;
+  }
+
   .jobless-beta-logo .beta {
     font-weight: 200;
     font-size: 30px;

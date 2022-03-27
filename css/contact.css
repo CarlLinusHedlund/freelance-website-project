@@ -2,10 +2,6 @@
   margin: 0;
   padding: 0;
 }
-
-header {
-  background-color: var(--jobless-dark);
-}
 .contact-container .inner {
   position: relative;
 }
@@ -136,27 +132,6 @@ header {
   font-weight: 500;
   border: none;
   box-shadow: var(--jobless-shadow-green);
-}
-
-.header-container {
-  background-color: var(--jobless-dark);
-}
-
-header .inner {
-  background-color: var(--jobless-dark);
-}
-
-.fa-bars {
-  color: var(--jobless-white);
-}
-
-.logo {
-  color: #92e3a9;
-}
-
-#bli-med {
-  background-color: #92e3a9;
-  color: var(--jobless-dark);
 }
 
 .social-media-container {
