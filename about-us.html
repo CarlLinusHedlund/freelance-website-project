@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>about us</title>
+    <title>About us</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,6 +20,11 @@
     <link rel="stylesheet" href="./css/nav-bar.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/root.css" />
+    <script
+      type="text/javascript"
+      src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+    ></script>
+    <script src="/js/responsiveNav.js" defer></script>
   </head>
   <body>
     <header>
@@ -27,7 +32,7 @@
         <div class="header-container">
           <div class="mobile-menu-container">
             <div class="mobile-toggle">
-              <i class="fa-solid fa-bars"></i>
+              <div class="bars"></div>
             </div>
             <a href="./#">
               <div class="logo"><span>job</span>less.</div>
@@ -50,9 +55,6 @@
               <span>NO</span>
               <i class="fa-solid fa-globe"></i>
             </div>
-            <a href="#" class="user-nav sign-up-button" id="mobile-logg-på"
-              >Logg På</a
-            >
           </div>
           <div class="nav">
             <div class="desktop-nav">
@@ -77,10 +79,11 @@
               </div>
             </div>
             <div class="user-nav-container">
-              <a href="#" class="user-nav sign-in-button" id="logg-på"
-                >Logg På</a
-              >
-              <button class="user-nav join-button" id="bli-med">Bli Med</button>
+              <button
+                class="user-nav join-button"
+                id="bli-med"
+                data-netlify-identity-button
+              ></button>
             </div>
           </div>
         </div>

@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="./css/find-talent-page.css" />
     <link rel="stylesheet" href="./css/root.css" />
     <link rel="stylesheet" href="./css/beta-tester.css" />
+    <script src="/js/responsiveNav.js" defer></script>
+    <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <title>Find talent</title>
   </head>
   <body>
@@ -28,7 +30,7 @@
         <div class="header-container">
           <div class="mobile-menu-container">
             <div class="mobile-toggle">
-              <i class="fa-solid fa-bars"></i>
+              <div class="bars"></div>
             </div>
             <a href="./#">
               <div class="logo"><span>job</span>less.</div>
@@ -51,9 +53,6 @@
               <span>NO</span>
               <i class="fa-solid fa-globe"></i>
             </div>
-            <a href="#" class="user-nav sign-up-button" id="mobile-logg-på"
-              >Logg På</a
-            >
           </div>
           <div class="nav">
             <div class="desktop-nav">
@@ -78,10 +77,7 @@
               </div>
             </div>
             <div class="user-nav-container">
-              <a href="#" class="user-nav sign-in-button" id="logg-på"
-                >Logg På</a
-              >
-              <button class="user-nav join-button" id="bli-med">Bli Med</button>
+              <button class="user-nav join-button" id="bli-med" data-netlify-identity-button></button>
             </div>
           </div>
         </div>

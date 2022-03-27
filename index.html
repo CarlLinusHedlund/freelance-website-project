@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="./css/nav-bar.css" />
     <link rel="stylesheet" href="./css/root.css" />
     <link rel="stylesheet" href="./css/index.css" />
+    <script src="/js/responsiveNav.js" defer></script>
     <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
@@ -30,9 +31,9 @@
         <div class="header-container">
           <div class="mobile-menu-container">
             <div class="mobile-toggle">
-              <i class="fa-solid fa-bars"></i>
+              <div class="bars"></div>
             </div>
-            <a class="logo" href="./#">
+            <a href="./#">
               <div class="logo"><span>job</span>less.</div>
             </a>
           </div>
@@ -77,8 +78,7 @@
               </div>
             </div>
             <div class="user-nav-container">
-              <button class="user-nav join-button" id="bli-med" data-netlify-identity-button>
-              </button>
+              <button class="user-nav join-button" id="bli-med" data-netlify-identity-button></button>
             </div>
           </div>
         </div>
