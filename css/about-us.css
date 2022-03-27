@@ -1,5 +1,6 @@
 .about-hero-banner {
   background-image: url(../Images/img/blue-texture.jpg);
+  background-size: cover;
   height: 500px;
   width: 100%;
   color: var(--jobless-white);
