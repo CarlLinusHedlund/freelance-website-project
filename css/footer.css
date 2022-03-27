@@ -90,7 +90,7 @@ body {
 }
 .policy {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   margin-top: 30px;
   flex-direction: column-reverse;
   gap: 20px;
@@ -129,6 +129,7 @@ body {
   }
   .policy {
     flex-direction: row;
+    width: 100%;
   }
   .socials {
     flex-direction: row;
