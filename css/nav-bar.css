@@ -83,11 +83,15 @@ header .inner {
   justify-content: space-around;
   top: 33px;
   width: 50px;
-  height: 0;
+  height: 40px;
   border-radius: 5px;
   gap: 3px;
   overflow: hidden;
   transition: ease-in-out 200ms;
+}
+
+.show {
+  display: block;
 }
 
 .lang-toggle {
