@@ -15,6 +15,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 .client-toogle,
 .talent-toogle,
@@ -31,6 +32,7 @@ body {
   justify-content: space-between;
   width: 100%;
   border-bottom: 2px solid #bfbfbf;
+  align-items: center;
 }
 .for-clients,
 .for-talent,
@@ -75,6 +77,8 @@ body {
   display: flex;
   gap: 20px;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 .socials a {
   text-decoration: none;
