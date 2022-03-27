@@ -44,6 +44,7 @@ header {
   top: 0;
   left: 0;
   height: 100%;
+  width: 100%;
 }
 
 .contact-container::after {
@@ -62,19 +63,22 @@ header {
 }
 
 .blob1 {
-  top: 50px;
+  top: 0px;
+  right: 0;
+  width: 80%;
 }
 
 .blob2 {
+  width: 50%;
   top: 650px;
   right: 0px;
 }
 
 .contact-img {
-  width: 100%;
+  width: 99%;
   top: 220px;
   right: 0px;
-  position: relative;
+  position: absolute;
 }
 
 .contact-img img {
@@ -160,7 +164,8 @@ header .inner {
 }
 
 .social-media-container {
-  margin-top: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   display: flex;
   gap: 30px;
 }
@@ -169,6 +174,8 @@ header .inner {
   font-size: 2em;
   margin-top: 20px;
   margin-bottom: 20px;
+  text-decoration: none;
+  color: var(--jobless-white);
 }
 
 .jobless-phone,
@@ -177,6 +184,7 @@ header .inner {
   gap: 20px;
   font-size: 20px;
   color: #d3d3d3;
+  right: 0px;
 }
 
 .fa-at,
@@ -271,26 +279,28 @@ header .inner {
   }
 
   .blob2 {
-    top: 100px;
+    top: 50px;
     right: 0px;
-    width: 100%;
+    width: 60%;
   }
 
   .blob1 {
     width: 100%;
     max-width: 380px;
-    top: 480px;
+    top: 550px;
     left: -100px;
   }
 }
 
 @media screen and (min-width: 770px) and (max-width: 882px) {
   .blob1 {
-    top: 380px;
+    top: 480px;
+    width: 80%;
   }
 
   .blob2 {
-    top: 70px;
+    width: 60%;
+    top: 0px;
   }
 }
 
@@ -298,5 +308,9 @@ header .inner {
   .blob1 {
     top: 630px;
     left: -190px;
+  }
+
+  .blob2 {
+    width: 50%;
   }
 }
