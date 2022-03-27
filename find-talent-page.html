@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="./css/find-talent-page.css" />
     <link rel="stylesheet" href="./css/root.css" />
     <link rel="stylesheet" href="./css/beta-tester.css" />
+    <script src="/js/responsiveNav.js" defer></script>
+    <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <title>Find talent</title>
   </head>
   <body>
@@ -28,7 +30,7 @@
         <div class="header-container">
           <div class="mobile-menu-container">
             <div class="mobile-toggle">
-              <i class="fa-solid fa-bars"></i>
+              <div class="bars"></div>
             </div>
             <a href="./#">
               <div class="logo"><span>job</span>less.</div>
@@ -51,9 +53,6 @@
               <span>NO</span>
               <i class="fa-solid fa-globe"></i>
             </div>
-            <a href="#" class="user-nav sign-up-button" id="mobile-logg-på"
-              >Logg På</a
-            >
           </div>
           <div class="nav">
             <div class="desktop-nav">
@@ -78,10 +77,7 @@
               </div>
             </div>
             <div class="user-nav-container">
-              <a href="#" class="user-nav sign-in-button" id="logg-på"
-                >Logg På</a
-              >
-              <button class="user-nav join-button" id="bli-med">Bli Med</button>
+              <button class="user-nav join-button" id="bli-med" data-netlify-identity-button></button>
             </div>
           </div>
         </div>
@@ -243,16 +239,17 @@
         </div>
       </div>
       <div class="beta-tester">
-        <h3 class="betatester-hero-text">Bli vår fremtidige Betatester</h3>
-        <div class="email-submit">
+        <div class="inner">
+        <h3 class="betatester-hero-text">Bli vår fremtidige <span>Betatester</span></h3>
+        <form class="email-submit" method="post" data-netlify="true" name="beta-tester">
           <input
             class="email-betatester"
             type="text"
             placeholder="Your email"
           />
-          <button class="submit-betatester">submit</button>
+          <button class="submit-betatester" type="submit">submit</button>
         </div>
-        <span class="betatester-info">Bli med å hjelpe oss</span>
+        <a class="hjelp-oss" href="./beta-tester.html">Bli med å hjelp oss</a>
       </div>
     </main>
     <footer>
@@ -264,7 +261,6 @@
                 <h4 class="footer-header">
                   <a href="./find-talent-page.html">For Clients</a>
                 </h4>
-                <i class="fa-solid fa-angle-down"></i>
               </div>
             </div>
             <div class="for-talent">
@@ -272,7 +268,6 @@
                 <h4 class="footer-header">
                   <a href="./find-job.html">For Talent</a>
                 </h4>
-                <i class="fa-solid fa-angle-down"></i>
               </div>
             </div>
             <div class="support">
@@ -280,7 +275,6 @@
                 <h4 class="footer-header">
                   <a href="./contact.html">Support</a>
                 </h4>
-                <i class="fa-solid fa-angle-down"></i>
               </div>
             </div>
             <div class="selskapet">
@@ -288,7 +282,6 @@
                 <h4 class="footer-header">
                   <a href="./about-us.html">Selskapet</a>
                 </h4>
-                <i class="fa-solid fa-angle-down"></i>
               </div>
             </div>
           </div>

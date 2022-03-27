@@ -20,8 +20,9 @@
     <link rel="stylesheet" href="./css/beta-tester.css" />
     <link rel="stylesheet" href="./css/beta-teste-site.css" />
     <link rel="stylesheet" href="./css/root.css" />
+    <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script src="/js/responsiveNav.js" defer></script>
-    <title>Find jobb - Jobless</title>
+    <title>BETA! - Jobless</title>
   </head>
   <body>
     <header class="dark-header">
@@ -29,7 +30,7 @@
         <div class="header-container">
           <div class="mobile-menu-container">
             <div class="mobile-toggle">
-              <i class="fa-solid fa-bars"></i>
+              <div class="bars"></div>
             </div>
             <a href="./#">
               <div class="logo"><span>job</span>less.</div>
@@ -52,9 +53,6 @@
               <span>NO</span>
               <i class="fa-solid fa-globe"></i>
             </div>
-            <a href="#" class="user-nav sign-up-button" id="mobile-logg-på"
-              >Logg På</a
-            >
           </div>
           <div class="nav">
             <div class="desktop-nav">
@@ -79,10 +77,7 @@
               </div>
             </div>
             <div class="user-nav-container">
-              <a href="#" class="user-nav sign-in-button" id="logg-på"
-                >Logg På</a
-              >
-              <button class="user-nav join-button" id="bli-med">Bli Med</button>
+              <button class="user-nav join-button" id="bli-med" data-netlify-identity-button></button>
             </div>
           </div>
         </div>
@@ -198,26 +193,30 @@
           <div class="footer-nav">
             <div class="for-clients">
               <div class="client-toogle">
-                <h4 class="footer-header"><a href="./find-talent-page.html">For Clients</a></h4>
-                <i class="fa-solid fa-angle-down"></i>
+                <h4 class="footer-header">
+                  <a href="./find-talent-page.html">For Clients</a>
+                </h4>
               </div>
             </div>
             <div class="for-talent">
               <div class="talent-toogle">
-                <h4 class="footer-header"><a href="./find-job.html">For Talent</a></h4>
-                <i class="fa-solid fa-angle-down"></i>
+                <h4 class="footer-header">
+                  <a href="./find-job.html">For Talent</a>
+                </h4>
               </div>
             </div>
             <div class="support">
               <div class="support-toogle">
-                <h4 class="footer-header"><a href="./contact.html">Support</a></h4>
-                <i class="fa-solid fa-angle-down"></i>
+                <h4 class="footer-header">
+                  <a href="./contact.html">Support</a>
+                </h4>
               </div>
             </div>
             <div class="selskapet">
               <div class="selskap-toogle">
-                <h4 class="footer-header"><a href="./about-us.html">Selskapet</a></h4>
-                <i class="fa-solid fa-angle-down"></i>
+                <h4 class="footer-header">
+                  <a href="./about-us.html">Selskapet</a>
+                </h4>
               </div>
             </div>
           </div>

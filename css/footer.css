@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box;
 }
+footer {
+  position: relative;
+  z-index: 1000;
+}
 body {
   font-family: "Ubuntu", sans-serif;
   margin: 0;
@@ -15,6 +19,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 .client-toogle,
 .talent-toogle,
@@ -31,6 +36,7 @@ body {
   justify-content: space-between;
   width: 100%;
   border-bottom: 2px solid #bfbfbf;
+  align-items: center;
 }
 .for-clients,
 .for-talent,
@@ -75,6 +81,8 @@ body {
   display: flex;
   gap: 20px;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 .socials a {
   text-decoration: none;
@@ -86,7 +94,7 @@ body {
 }
 .policy {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   margin-top: 30px;
   flex-direction: column-reverse;
   gap: 20px;
@@ -125,6 +133,7 @@ body {
   }
   .policy {
     flex-direction: row;
+    width: 100%;
   }
   .socials {
     flex-direction: row;
