@@ -24,6 +24,9 @@ header .inner {
   align-items: center;
   gap: 10px;
 }
+.mobile-menu-container a {
+  text-decoration: none;
+}
 .fa-bars {
   font-size: 36px;
   cursor: pointer;
@@ -126,7 +129,7 @@ header .inner {
   color: var(--jobless-white);
 }
 .dark-header .mobile-nav {
-  background-color: #0c0c0c;
+  background-color: var(--jobless-darkishgray);
 }
 .dark-header .mobile-nav a {
   color: var(--jobless-white);
