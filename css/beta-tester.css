@@ -51,6 +51,10 @@ body {
 .betatester-hero-text span {
   color: var(--jobless-green);
 }
+.hjelp-oss {
+  text-decoration: none;
+  color: var(--jobless-white);
+}
 @media screen and (min-width: 769px) {
   .beta-tester {
     height: 600px;
