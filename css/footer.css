@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box;
 }
+footer {
+  position: relative;
+  z-index: 1000;
+}
 body {
   font-family: "Ubuntu", sans-serif;
   margin: 0;
