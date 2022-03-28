@@ -1,6 +1,13 @@
+<script
+      src="https://kit.fontawesome.com/25a95e2ecb.js"
+      crossorigin="anonymous"
+></script>
 <link rel="stylesheet" href="./css/nav-bar.css" />
 <link rel="stylesheet" href="./css/normalize.css" />
 <link rel="stylesheet" href="./css/root.css" />
+<script src="https://www.w3schools.com/lib/w3data.js"></script>
+<script src="./js/responsiveNav.js" defer></script>
+<script src="./js/local-storage.js" defer></script>
 <header>
   <div class="inner">
     <div class="header-container">
@@ -33,7 +40,7 @@
       </div>
       <div class="nav">
         <div class="desktop-nav">
-          <a href="./beta-tester.html" class="nav-link" id="utforsk"
+          <a href="./beta-tester.html" class="nav-link nav-link1" id="utforsk"
             >Bli En Betatester</a
           >
           <a href="./find-job.html" class="nav-link" id="finn-jobb"
@@ -43,13 +50,25 @@
             >Finn Talent</a
           >
           <a href="./contact.html" class="nav-link" id="bli-en-selger"
-            >Kontakt Oss</a
-          >
+            >Kontakt Oss</a>
           <div class="språk-velger">
-            <span>NO</span>
-            <i class="fa-solid fa-globe"></i>
+            <div class="globe-container" id="språk-velger" onclick="myFunction()">
+              <i class="fa-solid fa-globe"></i>
+              <div class="globe-text">NO</div>
+            </div>
+            <div class="lang-container">
+              <div class="lang-inner-container">
+                <div class="selected_lang lang-toggle no" id="no" onclick="enableNoMode()">
+                  <div class="flag-container no-flag"></div>
+                  <div>NO</div>
+                </div>
+                <div class="lang-toggle en" id="en" onclick="enableEnMode()">
+                  <div class="flag-container en-flag"></div>
+                  <div>EN</div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
         <div class="user-nav-container">
           <a href="#" class="user-nav sign-in-button" id="logg-på">Logg På</a>
           <button class="user-nav join-button" id="bli-med">Bli Med</button>
@@ -58,3 +77,4 @@
     </div>
   </div>
 </header>
+

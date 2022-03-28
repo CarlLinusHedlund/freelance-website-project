@@ -58,14 +58,94 @@ header .inner {
   text-decoration: none;
 }
 .språk-velger {
-  background-color: #eaeaea;
-  padding: 10px;
-  border-radius: 5px;
   font-size: 12px;
+  gap: 5px;
+  width: 50px;
+  height: 30px;
+  background-color: #eaeaea;
+  border-radius: 5px;
+  position: relative;
 }
+
+.globe-container {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.lang-inner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+
+.lang-container {
+  position: absolute;
+  top: 33px;
+  width: 50px;
+  height: 40px;
+  border-radius: 5px;
+  gap: 3px;
+  overflow: hidden;
+  transition: ease-in-out 200ms;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.lang-toggle {
+  gap: 5px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  border-radius: 5px;
+}
+
+.selected_lang {
+  background-color: #424242;
+  color: var(--jobless-white);
+}
+
+.en-flag {
+  background-image: url(../images/svgs/uk-flag.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+.no-flag {
+  background-image: url(../images/svgs/nor-flag.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+.flag-container {
+  width: 12px;
+  height: 12px;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
 .sign-in-button {
   display: none;
 }
+
+.fa-globe {
+  font-size: 18px;
+}
+
 .join-button {
   border: none;
   border-radius: 15px;
