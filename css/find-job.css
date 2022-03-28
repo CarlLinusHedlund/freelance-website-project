@@ -1,5 +1,4 @@
 main {
-  margin-bottom: 100px;
   color: var(--jobless-darkishgray);
 }
 .hero-banner .inner {
@@ -12,10 +11,26 @@ main {
 }
 
 .hero-banner {
-  background-color: var(--jobless-darkishgray);
+  background-image: url(/Images/img/black-texture.jpg);
+  background-position: center;
   height: 100%;
   padding: 60px 0;
   overflow: hidden;
+  position: relative;
+}
+.hero-banner::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--jobless-dark);
+  opacity: 0.7;
+  z-index: 0;
+}
+.hero-banner * {
+  z-index: 1;
 }
 
 .herobanner-text {
@@ -281,6 +296,11 @@ main {
 .product-card {
   position: relative;
   top: 0;
+  border-radius: 0 0 30px 30px;
+}
+.product-talent-profile {
+  background-image: url(/Images/img/nisse.jpg);
+  background-size: cover;
 }
 .show-product-card-section {
   padding: 100px 20px;
@@ -300,6 +320,10 @@ main {
   background-color: #121212;
   position: relative;
   top: 50px;
+  border-radius: 30px 30px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (min-width: 769px) {

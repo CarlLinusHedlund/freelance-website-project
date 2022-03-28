@@ -15,6 +15,10 @@
   --jobless-green: #92e3a9;
 
   /* root shadow */
+  --jobless-shadow-green: 0px 3.6px 2.7px #92e3a906, 0px 9px 6.9px #92e3a908,
+    0px 18.4px 14.2px #92e3a90a, 0px 38px 29.2px #92e3a90c,
+    0px 104px 80px #92e3a912;
+
   --jobless-shadow: 0px 3.6px 2.7px rgba(0, 0, 0, 0.022),
     0px 9px 6.9px rgba(0, 0, 0, 0.031), 0px 18.4px 14.2px rgba(0, 0, 0, 0.039),
     0px 38px 29.2px rgba(0, 0, 0, 0.048), 0px 104px 80px rgba(0, 0, 0, 0.07);
@@ -44,9 +48,11 @@
 .inner {
   padding-left: 20px;
   padding-right: 20px;
-  max-width: 1024px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
+/* class shortcuts */
 .m0 {
   margin: 0;
 }
@@ -57,4 +63,15 @@
 
 .h-font {
   font-family: var(--heading-font);
+}
+.sh {
+  box-shadow: var(--jobless-shadow);
+}
+
+.dark-text {
+  color: var(--jobless-dark);
+}
+
+.white-text {
+  color: var(--jobless-white);
 }

@@ -18,50 +18,71 @@
     <link rel="stylesheet" href="./css/nav-bar.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/find-job.css" />
+    <link rel="stylesheet" href="./css/beta-tester.css" />
     <link rel="stylesheet" href="./css/root.css" />
+    <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <title>Find jobb - Jobless</title>
+    <script src="./js/responsiveNav.js" defer></script>
   </head>
   <body>
     <header>
-      <div class="inner">
-        <div class="header-container">
-          <div class="mobile-menu-container">
-            <div class="mobile-toogle">
-              <i class="fa-solid fa-bars"></i>
-            </div>
-            <div class="logo"><span>job</span>less.</div>
-          </div>
-          <div class="mobile-nav hide">
-            <a href="#" class="nav-link" id="utforsk">Utforsk</a>
-            <a href="#" class="nav-link" id="finn-jobb">Finn Jobb</a>
-            <a href="#" class="nav-link" id="finn-talent">Finn Talent</a>
-            <a href="#" class="nav-link" id="bli-en-selger">Bli En Selger</a>
-            <div class="språk-velger">
-              <span>NO</span>
-              <i class="fa-solid fa-globe"></i>
-            </div>
-            <button class="user-nav" id="mobile-logg-på">Logg På</button>
-          </div>
-          <div class="nav">
-            <div class="desktop-nav">
-              <a href="#" class="nav-link" id="utforsk">Utforsk</a>
-              <a href="#" class="nav-link" id="finn-jobb">Finn Jobb</a>
-              <a href="#" class="nav-link" id="finn-talent">Finn Talent</a>
-              <a href="#" class="nav-link" id="bli-en-selger">Bli En Selger</a>
-              <div class="språk-velger">
-                <span>NO</span>
-                <i class="fa-solid fa-globe"></i>
+        <div class="inner">
+            <div class="header-container">
+              <div class="mobile-menu-container">
+                <div class="mobile-toggle">
+                  <div class="bars"></div>
+                </div>
+                <a href="./#">
+                  <div class="logo"><span>job</span>less.</div>
+                </a>
+              </div>
+              <div class="mobile-nav hidden">
+                <a href="./beta-tester.html" class="nav-link" id="utforsk"
+                  >Bli En Betatester</a
+                >
+                <a href="./find-job.html" class="nav-link" id="finn-jobb"
+                  >Finn Jobb</a
+                >
+                <a href="./find-talent-page.html" class="nav-link" id="finn-talent"
+                  >Finn Talent</a
+                >
+                <a href="./contact.html" class="nav-link" id="bli-en-selger"
+                  >Kontakt Oss</a
+                >
+                <div class="språk-velger">
+                  <span>NO</span>
+                  <i class="fa-solid fa-globe"></i>
+                </div>
+              </div>
+              <div class="nav">
+                <div class="desktop-nav">
+                  <a href="./beta-tester.html" class="nav-link" id="utforsk"
+                    >Bli En Betatester</a
+                  >
+                  <a href="./find-job.html" class="nav-link" id="finn-jobb"
+                    >Finn Jobb</a
+                  >
+                  <a
+                    href="./find-talent-page.html"
+                    class="nav-link"
+                    id="finn-talent"
+                    >Finn Talent</a
+                  >
+                  <a href="./contact.html" class="nav-link" id="bli-en-selger"
+                    >Kontakt Oss</a
+                  >
+                  <div class="språk-velger">
+                    <span>NO</span>
+                    <i class="fa-solid fa-globe"></i>
+                  </div>
+                </div>
+                <div class="user-nav-container">
+                  <button class="user-nav join-button" id="bli-med" data-netlify-identity-button></button>
+                </div>
               </div>
             </div>
-            <div class="user-nav-container">
-              <button class="user-nav" id="logg-på">Logg På</button>
-              <button class="user-nav" id="bli-med">Bli Med</button>
-            </div>
           </div>
-        </div>
-      </div>
-    </header>
-    <main>
+      </header>
       <section class="hero-banner">
         <div class="inner">
           <div class="herobanner-text">
@@ -70,7 +91,7 @@
           </div>
           <div>
             <img
-              src="/Images/mockups/MacBookPro16.png"
+              src="/images/mockups/MacBookPro16.png"
               alt="picture of iPhone13"
               class="iphone-hero"
             />
@@ -233,11 +254,13 @@
             </div>
           </div>
           <div class="profile-card-with-product">
-            <div class="product-pic"></div>
+            <div class="product-pic">
+              <img src="/images/logos/Influunt_white.svg" alt="" />
+            </div>
             <div class="profile-card product-card">
               <div class="profile-card-top-row">
                 <div class="picture-name-container">
-                  <div class="profile-thumbnail talent-profile"></div>
+                  <div class="profile-thumbnail product-talent-profile"></div>
                   <div class="name-username-container">
                     <span>Mats Fjeldstad</span>
                     <span>@mædmatz</span>
@@ -245,7 +268,7 @@
                 </div>
                 <i class="fa-solid fa-heart"></i>
               </div>
-              <p>Jeg designer din nettside</p>
+              <p>La meg lage din tidløse logo</p>
               <div class="bottom-row">
                 <div class="rating">
                   <i class="fa-solid fa-star"></i>
@@ -257,71 +280,68 @@
           </div>
         </div>
       </section>
+      <div class="beta-tester">
+        <div class="inner">
+        <h3 class="betatester-hero-text">Bli vår fremtidige <span>Betatester</span></h3>
+        <form class="email-submit" method="post" data-netlify="true" name="beta-tester">
+          <input
+            class="email-betatester"
+            type="text"
+            placeholder="Your email"
+          />
+          <button class="submit-betatester" type="submit">submit</button>
+        </div>
+        <a class="hjelp-oss" href="./beta-tester.html">Bli med å hjelp oss</a>
+      </div>
     </main>
     <footer>
       <div class="footer-container">
-        <div class="footer-nav">
-          <div class="for-clients">
-            <div class="client-toogle">
-              <h4 class="footer-header">For Clients</h4>
-              <i class="fa-solid fa-angle-down"></i>
+        <div class="inner">
+          <div class="footer-nav">
+            <div class="for-clients">
+              <div class="client-toogle">
+                <h4 class="footer-header">
+                  <a href="./find-talent-page.html">For Clients</a>
+                </h4>
+              </div>
             </div>
-            <div class="dropdown-clients">
-              <a href="" class="footer-nav-links">About us</a>
-              <a href="" class="footer-nav-links">About us</a>
-              <a href="" class="footer-nav-links">About us</a>
-              <a href="" class="footer-nav-links">About us</a>
+            <div class="for-talent">
+              <div class="talent-toogle">
+                <h4 class="footer-header">
+                  <a href="./find-job.html">For Talent</a>
+                </h4>
+              </div>
             </div>
-          </div>
-          <div class="for-talent">
-            <div class="talent-toogle">
-              <h4 class="footer-header">For Talent</h4>
-              <i class="fa-solid fa-angle-down"></i>
+            <div class="support">
+              <div class="support-toogle">
+                <h4 class="footer-header">
+                  <a href="./contact.html">Support</a>
+                </h4>
+              </div>
             </div>
-            <div class="dropdown-talent">
-              <a href="" class="footer-nav-links">About us</a>
-              <a href="" class="footer-nav-links">About us</a>
-              <a href="" class="footer-nav-links">About us</a>
-              <a href="" class="footer-nav-links">About us</a>
-            </div>
-          </div>
-          <div class="support">
-            <div class="support-toogle">
-              <h4 class="footer-header">Support</h4>
-              <i class="fa-solid fa-angle-down"></i>
-            </div>
-            <div class="dropdown-support">
-              <a href="" class="footer-nav-links">About us</a>
-              <a href="" class="footer-nav-links">About us</a>
-              <a href="" class="footer-nav-links">About us</a>
-              <a href="" class="footer-nav-links">About us</a>
+            <div class="selskapet">
+              <div class="selskap-toogle">
+                <h4 class="footer-header">
+                  <a href="./about-us.html">Selskapet</a>
+                </h4>
+              </div>
             </div>
           </div>
-          <div class="selskapet">
-            <div class="selskap-toogle">
-              <h4 class="footer-header">Selskapet</h4>
-              <i class="fa-solid fa-angle-down"></i>
-            </div>
-            <div class="dropdown-selskap">
-              <a href="" class="footer-nav-links">About us</a>
-              <a href="" class="footer-nav-links">About us</a>
-              <a href="" class="footer-nav-links">About us</a>
-              <a href="" class="footer-nav-links">About us</a>
+          <div class="socials">
+            <span>Follow us:</span>
+            <div class="social-media">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
             </div>
           </div>
-        </div>
-        <div class="socials">
-          <span>Follow us:</span>
-          <a href=""><i class="fa-brands fa-facebook"></i></a>
-          <a href=""><i class="fa-brands fa-instagram"></i></a>
-          <a href=""><i class="fa-brands fa-github"></i></a>
-          <a href=""><i class="fa-brands fa-linkedin"></i></a>
-        </div>
-        <div class="policy">
-          <div class="footer-logo"><span>job</span>less.</div>
-          <div class="policy-container">
-            <span class="policy-info">terms of service</span>
-            <span class="policy-info">privacy service</span>
+          <div class="policy">
+            <div class="footer-logo"><span>job</span>less.</div>
+            <div class="policy-container">
+              <span class="policy-info">terms of service</span>
+              <span class="policy-info">privacy service</span>
+            </div>
           </div>
         </div>
       </div>

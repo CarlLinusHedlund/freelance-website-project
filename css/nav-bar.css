@@ -16,7 +16,6 @@ header .inner {
   justify-content: space-between;
   height: 100px;
   align-items: center;
-  background-color: var(--jobless-white);
   color: var(--jobless-dark);
   font-weight: 500;
 }
@@ -25,14 +24,21 @@ header .inner {
   align-items: center;
   gap: 10px;
 }
+.mobile-menu-container a {
+  text-decoration: none;
+}
 .fa-bars {
   font-size: 36px;
+  cursor: pointer;
 }
 .logo {
   font-size: 28px;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 300;
+  text-decoration: none;
+  color: var(--jobless-dark);
 }
+
 .logo span {
   font-style: italic;
 }
@@ -46,7 +52,6 @@ header .inner {
   display: none;
 }
 .nav-link {
-  background-color: var(--jobless-white);
   color: var(--jobless-dark);
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
@@ -58,56 +63,130 @@ header .inner {
   border-radius: 5px;
   font-size: 12px;
 }
-#logg-på {
-  border: none;
-  background-color: var(--jobless-white);
-  color: var(--jobless-dark);
-  margin-right: 15px;
-  margin-left: 20px;
+.sign-in-button {
   display: none;
 }
-#bli-med {
-  border: transparent;
+.join-button {
+  border: none;
   border-radius: 15px;
-  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
   width: 100px;
   color: var(--jobless-white);
   background-color: #eca63d;
-  height: 30px;
   font-weight: 700;
+  cursor: pointer;
+}
+.join-button a {
+  color: var(--jobless-white);
+  text-decoration: none;
 }
 .mobile-nav {
+  z-index: 110;
   display: flex;
   flex-direction: column;
   gap: 40px;
   position: absolute;
   top: 100px;
   left: 0px;
-  padding: 0 20px;
+  padding: 40px 20px;
   align-items: flex-start;
   background-color: var(--jobless-white);
   color: var(--jobless-dark);
   padding: 20px;
-  width: 20%;
+  width: 40%;
   min-width: 250px;
+  transition: 400ms;
+  border-radius: 0 0 15px 0;
+  font-size: 24px;
 }
-#mobile-logg-på {
-  padding: 5px;
-  border-radius: 15px;
-  width: 100px;
-  border: 2px solid #eca63d;
-  color: #eca63d;
+.hidden {
+  transform: translateX(-500px);
+}
+
+.dark-header {
+  color: var(--jobless-white);
+  background-color: #0c0c0c;
+}
+.dark-header .logo {
+  color: var(--jobless-green);
+  text-decoration: none;
+}
+.dark-header .join-button {
+  border: 2px solid var(--jobless-green);
+  background-color: transparent;
+}
+.dark-header .join-button a {
+  color: var(--jobless-green);
+  text-decoration: none;
+}
+.dark-header .fa-bars {
+  color: var(--jobless-white);
+}
+.dark-header .mobile-nav {
+  background-color: #0c0c0c;
+}
+.dark-header .mobile-nav a {
+  color: var(--jobless-white);
+}
+/* hgamburger menu */
+.mobile-toggle {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.bars {
+  width: 30px;
+  height: 5px;
+  background-color: var(--jobless-dark);
+  border-radius: 20px;
+  position: relative;
+}
+
+.bars::after,
+.bars::before {
+  background-color: var(--jobless-dark);
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  border-radius: 20px;
+  position: absolute;
+  transition: 200ms;
+}
+.bars::after {
+  top: 10px;
+}
+.bars::before {
+  top: -10px;
+}
+
+.bars.toggled {
+  transform: rotateZ(45deg);
+}
+
+.bars.toggled::before {
+  transform: rotateZ(90deg);
+  top: 0;
+}
+.bars.toggled::after {
+  top: 0;
+}
+
+.dark-header .bars,
+.dark-header .bars::after,
+.dark-header .bars::before {
   background-color: var(--jobless-white);
-  color: var(--jobless-dark);
-  font-weight: 700;
 }
+
 @media screen and (min-width: 769px) {
-  .inner {
-    margin: 0 auto;
-    max-width: 1440px;
-  }
   .nav {
     display: flex;
+    gap: 20px;
   }
   .desktop-nav {
     display: flex;
@@ -115,16 +194,24 @@ header .inner {
     gap: 20px;
     align-items: center;
   }
-  .fa-bars {
+  .bars {
     display: none;
   }
-  #logg-på {
-    display: block;
+  .sign-in-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--jobless-dark);
+    text-decoration: none;
   }
   .user-nav-container {
     display: flex;
+    gap: 20px;
   }
   .mobile-nav {
     display: none;
+  }
+  .dark-header a {
+    color: var(--jobless-white);
   }
 }
