@@ -10,10 +10,9 @@ let lang_mode = localStorage.getItem('lang');
 
 
 
-// langToggle.onclick = function openLang (){
-//      langContainer.style.height = "40px";
-// }
-// openlang()
+langToggle.onclick = function openLang (){
+     langContainer.style.display = "block";
+}
 
 const enableEnMode = () => {
     globeText.innerHTML = "EN";
@@ -54,13 +53,13 @@ no_button.onclick = function langSelectedNo (){
     //   }
     
     
-    // window.onclick = function(e){
-    //     if (!e.target.matches(langToggle)){
-    //         const langToggle = document.getElementById('språk-velger');
-    //        if(langToggle.classList.contains('show')) {
-    //             langToggle.classList.remove('show')
-    //         }
-    //     }
-    // }
+    window.onclick = function(e){
+        if (!e.target.matches(globe)){
+            const langContainer = document.getElementById('lang-container');
+           if(langContainer.classList.contains('show')) {
+                langContainer.classList.remove('show')
+            }
+        }
+    }
 
 
