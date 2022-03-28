@@ -132,6 +132,15 @@ body {
   max-width: 400px;
 }
 
+.earn-money-info a {
+  text-decoration: none;
+  color: var(--jobless-dark);
+}
+
+.earn-money-info a:hover {
+  color: var(--jobless-white);
+}
+
 .earn-money-info p {
   font-family: var(--secondary-font);
 }
