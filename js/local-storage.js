@@ -9,9 +9,11 @@ let lang_mode = localStorage.getItem('lang');
 
 
 
-langToggle.onclick = function openLang (){
-     langContainer.style.height = "40px";
-}
+
+// langToggle.onclick = function openLang (){
+//      langContainer.style.height = "40px";
+// }
+// openlang()
 
 const enableEnMode = () => {
     globeText.innerHTML = "EN";
