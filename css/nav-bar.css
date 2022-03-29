@@ -80,7 +80,7 @@ header .inner {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
   height: 100%;
 }
@@ -89,32 +89,34 @@ header .inner {
   position: absolute;
   top: 33px;
   width: 50px;
-  height: 40px;
+  height: 60px;
   border-radius: 5px;
-  gap: 3px;
-  overflow: hidden;
+  gap: 2px;
   transition: ease-in-out 200ms;
-  display: none;
-}
-
-.show {
   display: block;
 }
 
+.hide {
+  display: none;
+}
+
 .lang-toggle {
+  z-index: 100;
   gap: 5px;
   width: 100%;
-  height: 100%;
+  padding: 5px;
+  height: 30px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   position: relative;
   border-radius: 5px;
+  background-color: #424242;
+  color: var(--jobless-white);
 }
 
 .selected_lang {
-  background-color: #424242;
-  color: var(--jobless-white);
+  border: 1px solid white;
 }
 
 .en-flag {

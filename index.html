@@ -33,7 +33,7 @@
         <div class="header-container">
           <div class="mobile-menu-container">
             <div class="mobile-toggle">
-              <div class="bars"></div>
+              <i class="fa-solid fa-bars"></i>
             </div>
             <a href="./#">
               <div class="logo"><span>job</span>less.</div>
@@ -43,9 +43,7 @@
             <a href="./beta-tester.html" class="nav-link" id="utforsk"
               >Bli En Betatester</a
             >
-            <a href="./find-job.html" class="nav-link" id="finn-jobb"
-              >Finn Jobb</a
-            >
+            <a href="./find-job.html" class="nav-link" id="finn-jobb">Finn Jobb</a>
             <a href="./find-talent-page.html" class="nav-link" id="finn-talent"
               >Finn Talent</a
             >
@@ -56,6 +54,9 @@
               <span>NO</span>
               <i class="fa-solid fa-globe"></i>
             </div>
+            <a href="#" class="user-nav sign-up-button" id="mobile-logg-på"
+              >Logg På</a
+            >
           </div>
           <div class="nav">
             <div class="desktop-nav">
@@ -70,19 +71,21 @@
               >
               <a href="./contact.html" class="nav-link" id="bli-en-selger"
                 >Kontakt Oss</a>
-              <div class="språk-velger" id="språk-velger" onclick="openLang()">
-                <div class="globe-container ">
+              <div class="språk-velger">
+                <div class="globe-container" id="språk-velger" onclick="myFunction()">
                   <i class="fa-solid fa-globe"></i>
                   <div class="globe-text">NO</div>
                 </div>
-                <div class="lang-container">
-                  <div class="selected_lang lang-toggle" id="no" onclick="enableNoMode()">
-                    <div class="flag-container no-flag"></div>
-                    <div>NO</div>
-                  </div>
-                  <div class="lang-toggle" id="en" onclick="enableEnMode()">
-                    <div class="flag-container en-flag"></div>
-                    <div>EN</div>
+                <div class="lang-container" id="langContainer">
+                  <div class="lang-inner-container">
+                    <div class="selected_lang lang-toggle no" id="no" onclick="enableNoMode()">
+                      <div class="flag-container no-flag"></div>
+                      <div>NO</div>
+                    </div>
+                    <div class="lang-toggle en" id="en" onclick="enableEnMode()">
+                      <div class="flag-container en-flag"></div>
+                      <div>EN</div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -91,7 +94,6 @@
               <button class="user-nav join-button" id="bli-med">Bli Med</button>
             </div>
           </div>
-        </div>
         </div>
       </div>
     </header>
