@@ -296,4 +296,8 @@ header .inner {
   .dark-header a {
     color: var(--jobless-white);
   }
+
+  .fa-bars {
+    display: none;
+  }
 }

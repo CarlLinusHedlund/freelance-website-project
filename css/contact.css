@@ -40,7 +40,7 @@
   top: 0;
   left: 0;
   height: 100%;
-  width: 100%;
+  width: 99%;
 }
 
 .contact-container::after {
@@ -60,14 +60,14 @@
 
 .blob1 {
   top: 0px;
-  right: 0;
+  right: 5px;
   width: 80%;
 }
 
 .blob2 {
   width: 50%;
   top: 650px;
-  right: 0px;
+  right: 5px;
 }
 
 .contact-img {

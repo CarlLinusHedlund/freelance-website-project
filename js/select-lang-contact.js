@@ -33,9 +33,9 @@ langToggle.onclick = function openLang() {
     langContainer.classList.toggle('hide');
 }
 
-// function myFunction() {
-//     document.querySelector(".lang-container").classList.toggle("show");
-// }
+function myFunction() {
+    document.querySelector(".lang-container").classList.toggle("show");
+}
 
 const enableEnMode = () => {
     en_button.classList.add('selected_lang');
@@ -173,9 +173,6 @@ const enableNoMode = () => {
     for (let i = 0; i < nav_linkOne.length; i++) {
         nav_linkOne[i].innerHTML = "Bli en Betatester";
     }
-    for (let i = 0; i < nav_linkTwo.length; i++) {
-      nav_linkTwo[i].innerHTML = "Bli en Betatester";
-    }
     for (let i = 0; i < nav_linkThree.length; i++){
       nav_linkThree[i].innerHTML = "Finn Talent"
     }
@@ -306,6 +303,15 @@ no_button.onclick = function () {
     enableNoMode();
 };
 
+// window.onclick = function(e){
+//     if (!e.target.matches(".globe")){
+//         const langContainer = document.getElementById('langContainer');
+//        if(!langContainer.classList.contains('hide')) {
+//             langContainer.classList.add('hide')
+//         }
+//     }
+// }
+
 window.onmouseup = function closeLangBo(event) {
     if (
         event.target !== langContainer &&
@@ -314,5 +320,3 @@ window.onmouseup = function closeLangBo(event) {
         langContainer.classList.add('hide');
     }
 };
-
-

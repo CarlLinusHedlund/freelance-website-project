@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="./css/beta-tester.css" />
     <script src="/js/responsiveNav.js" defer></script>
     <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script src="./js/select-lang-findtalent.js" defer></script>
     <title>Find talent</title>
   </head>
   <body>
@@ -30,23 +31,21 @@
         <div class="header-container">
           <div class="mobile-menu-container">
             <div class="mobile-toggle">
-              <div class="bars"></div>
+              <i class="fa-solid fa-bars"></i>
             </div>
             <a href="./#">
               <div class="logo"><span>job</span>less.</div>
             </a>
           </div>
           <div class="mobile-nav hidden">
-            <a href="./beta-tester.html" class="nav-link" id="utforsk"
+            <a href="./beta-tester.html" class="nav-link nav-link1" id="utforsk"
               >Bli En Betatester</a
             >
-            <a href="./find-job.html" class="nav-link" id="finn-jobb"
-              >Finn Jobb</a
-            >
-            <a href="./find-talent-page.html" class="nav-link" id="finn-talent"
+            <a href="./find-job.html" class="nav-link nav-link2" id="finn-jobb">Finn Jobb</a>
+            <a href="./find-talent-page.html" class="nav-link nav-link3" id="finn-talent"
               >Finn Talent</a
             >
-            <a href="./contact.html" class="nav-link" id="bli-en-selger"
+            <a href="./contact.html" class="nav-link nav-link4" id="bli-en-selger"
               >Kontakt Oss</a
             >
             <div class="språk-velger">
@@ -56,34 +55,44 @@
           </div>
           <div class="nav">
             <div class="desktop-nav">
-              <a href="./beta-tester.html" class="nav-link" id="utforsk"
+              
+              <a href="./beta-tester.html" class="nav-link nav-link1" id="utforsk"
                 >Bli En Betatester</a
               >
-              <a href="./find-job.html" class="nav-link" id="finn-jobb"
+              <a href="./find-job.html" class="nav-link nav-link2" id="finn-jobb"
                 >Finn Jobb</a
               >
-              <a
-                href="./find-talent-page.html"
-                class="nav-link"
-                id="finn-talent"
+              <a href="./find-talent-page.html" class="nav-link nav-link3" id="finn-talent"
                 >Finn Talent</a
               >
-              <a href="./contact.html" class="nav-link" id="bli-en-selger"
-                >Kontakt Oss</a
-              >
-              <div class="språk-velger">
-                <span>NO</span>
-                <i class="fa-solid fa-globe"></i>
-              </div>
+              <a href="./contact.html" class="nav-link nav-link4" id="bli-en-selger"
+                >Kontakt Oss</a>
+                <div class="språk-velger">
+                  <div class="globe-container" id="språk-velger" onclick="myFunction()">
+                    <i class="fa-solid fa-globe"></i>
+                    <div class="globe-text">NO</div>
+                  </div>
+                  <div class="lang-container hide" id="langContainer">
+                    <div class="lang-inner-container">
+                      <div class="selected_lang lang-toggle no" id="no" onclick="enableNoMode()">
+                        <div class="flag-container no-flag"></div>
+                        <div>NO</div>
+                      </div>
+                      <div class="lang-toggle en" id="en" onclick="enableEnMode()">
+                        <div class="flag-container en-flag"></div>
+                        <div>EN</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </div>
             <div class="user-nav-container">
               <button class="user-nav join-button" id="bli-med" data-netlify-identity-button></button>
             </div>
-          </div>
         </div>
       </div>
     </header>
-    <main>
+    <main class="find-talent-main">
       <div class="talent-hero-banner">
         <div class="inner">
           <h1 class="talent-hero-text">
