@@ -1,36 +1,48 @@
 const en_button = document.getElementById('en'),
-no_button = document.getElementById('no');
-const nav_links = document.querySelector('.nav-link1');
+    no_button = document.getElementById('no');
+
+// NAVIGATION LINKS IN THE HEADER
+const nav_linksOne = document.querySelectorAll('.nav-link1');
 const nav_link2 = document.querySelector('.nav-link2')
 const nav_link3 = document.querySelector('.nav-link3')
 const nav_link4 = document.querySelector('.nav-link4')
+
+// SAME 1
 const globe = document.querySelector('.globe-container');
+
+// SAME 1 This is the lang toggle BTN
 const langToggle = document.getElementById('språk-velger');
-const globeText = document.querySelector('.globe-text');
+
+// LANG TEXT
+const globeText = document.querySelectorAll('.globe-text');
+
 const langContainer = document.querySelector('.lang-container');
 let lang_mode = localStorage.getItem('lang');
 const contactPage = document.querySelector(".contact-body")
 const contactMain = document.querySelector(".contact-container")
 
 
-
-
-langToggle.onclick = function openLang (){
+document.addEventListener("DOMContentLoaded", function (event) {
+    //we ready baby
+    if (lang_mode === 'no') {
+        enableNoMode();
+    } else {
+        enableEnMode();
+    }
+});
+langToggle.onclick = function openLang() {
     langContainer.classList.toggle('hide');
-    
 }
-
-
 
 function myFunction() {
     document.querySelector(".lang-container").classList.toggle("show");
-  }
+}
 
 const enableEnMode = () => {
-  en_button.classList.add('selected_lang');
-  no_button.classList.remove('selected_lang')
-  localStorage.setItem('lang', 'en');
-  contactMain.innerHTML = `<section class="contact-container">
+    // en_button.classList.add('selected_lang');
+    // no_button.classList.remove('selected_lang')
+    localStorage.setItem('lang', 'en');
+    contactMain.innerHTML = `<section class="contact-container">
     <div class="inner">
       <div class="contact-form-container">
         <div class="contact-form-header">
@@ -135,15 +147,24 @@ const enableEnMode = () => {
       </div>
     </div>
   </section>`;
-  nav_links.innerHTML = "Become a Betatester";
-  globeText.innerHTML = "EN";
-  console.log(nav_links)  
+    for (let i = 0; i < nav_linksOne.length; i++) {
+        nav_linksOne[i].innerHTML = "TEST";
+    }
+    // nav_linksOne.innerHTML = "Become a Betatester";
+    // nav_linksOne.innerText = "TEST";
+    // globeText.innerHTML = "EN";
+    for (let i = 0; i < globeText.length; i++) {
+        globeText[i].innerHTML = "EN";
+    }
 };
 
 const enableNoMode = () => {
-    globeText.innerHTML = "NO"
-    nav_links.innerHTML = "Bli en Betatester";
-
+    for (let i = 0; i < nav_linksOne.length; i++) {
+        nav_linksOne[i].innerHTML = "Bli en Betatester";
+    }
+    for (let i = 0; i < globeText.length; i++) {
+        globeText[i].innerHTML = "NO";
+    }
     no_button.classList.add('selected_lang')
     en_button.classList.remove('selected_lang')
     localStorage.setItem('lang', 'no')
@@ -254,36 +275,30 @@ const enableNoMode = () => {
   </section>`
 }
 
-if (lang_mode === 'no') {
-    enableNoMode();
-   } else {
-       enableEnMode()
-   };
-
-en_button.onclick = function langSelectedEn (){
+en_button.onclick = function () {
     enableEnMode();
 };
 
-no_button.onclick = function langSelectedNo (){
+no_button.onclick = function () {
     enableNoMode();
 };
 
-    // window.onclick = function(e){
-    //     if (!e.target.matches(".globe")){
-    //         const langContainer = document.getElementById('langContainer');
-    //        if(!langContainer.classList.contains('hide')) {
-    //             langContainer.classList.add('hide')
-    //         }
-    //     }
-    // }
+// window.onclick = function(e){
+//     if (!e.target.matches(".globe")){
+//         const langContainer = document.getElementById('langContainer');
+//        if(!langContainer.classList.contains('hide')) {
+//             langContainer.classList.add('hide')
+//         }
+//     }
+// }
 
-    window.onmouseup = function closeLangBo(event) {
-        if (
-          event.target !== langContainer &&
-          event.target.parentNode !==  langContainer
-        ) {
-          langContainer.classList.add('hide');
-        }
-      };
+window.onmouseup = function closeLangBo(event) {
+    if (
+        event.target !== langContainer &&
+        event.target.parentNode !== langContainer
+    ) {
+        langContainer.classList.add('hide');
+    }
+};
 
 
