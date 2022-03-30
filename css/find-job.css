@@ -1,0 +1,413 @@
+main {
+  margin-bottom: 100px;
+  color: var(--jobless-darkishgray);
+}
+.hero-banner .inner {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.hero-banner {
+  background-image: url(/Images/img/black-texture.jpg);
+  background-position: center;
+  height: 100%;
+  padding: 60px 0;
+  overflow: hidden;
+  position: relative;
+}
+.hero-banner::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--jobless-dark);
+  opacity: 0.7;
+  z-index: 0;
+}
+.hero-banner * {
+  z-index: 1;
+}
+
+.herobanner-text {
+  color: var(--jobless-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10;
+}
+
+.herobanner-text h1 {
+  font-size: 56px;
+  font-weight: 800;
+  text-align: center;
+}
+.herobanner-text p {
+  font-size: 24px;
+  text-align: center;
+}
+
+.iphone-hero {
+  width: 300px;
+}
+
+.find-work-container .inner {
+  padding: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 40px;
+}
+.find-work-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.find-work-info h2 {
+  font-size: 43px;
+}
+.find-work-info p,
+.mobile-text {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+}
+.desktop-text {
+  display: none;
+}
+
+.example-ui-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  width: 100%;
+}
+.categories-toggle-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.categories-toggle {
+  padding: 10px 20px;
+  background-color: var(--jobless-white);
+  box-shadow: var(--jobless-shadow);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid #a5a1a120;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: var(--heading-font);
+  font-weight: 500;
+}
+
+.job-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  border: 2px solid #a5a1a150;
+  box-shadow: var(--jobless-shadow);
+  background-color: var(--jobless-white);
+  font-family: var(--secondary-font);
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.title-and-like,
+.company-and-sallary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title-and-like {
+  font-weight: 800;
+}
+.title-and-like .fa-heart {
+  color: #cd0000;
+}
+.sallary {
+  font-weight: 800;
+}
+.sallary span {
+  font-weight: 500;
+}
+.job-card-buttons-container {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.job-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  border: 1px solid var(--jobless-darkishgray);
+  width: 100px;
+  padding: 5px 15px;
+}
+.messages-mockup {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  min-width: 200px;
+}
+.client-message-container,
+.talent-message-container {
+  display: flex;
+  gap: 10px;
+}
+.talent-message-container {
+  flex-direction: row;
+}
+.client-message-container {
+  flex-direction: row-reverse;
+}
+.profile-thumbnail {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+}
+
+.talent-profile {
+  background-image: url(../Images/img/profilbilde-arne.png);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: var(--jobless-orange);
+}
+.client-profile {
+  background-image: url(../Images/logos/Google__G__Logo.svg);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--jobless-white);
+}
+
+.message-box {
+  background-color: var(--jobless-blue);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.client-message {
+  background-color: transparent;
+  border: 2px solid var(--jobless-blue);
+  color: var(--jobless-blue);
+}
+.talent-message {
+  color: var(--jobless-white);
+}
+.sell-your-service-section {
+  background-color: #1e1e1e;
+  color: var(--jobless-white);
+}
+.sell-your-service-section .inner {
+  display: flex;
+  flex-direction: column;
+  padding: 140px 20px;
+  position: relative;
+}
+.sell-your-service-text,
+.market-your-service-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: fit-content;
+}
+.sell-your-service-text h2,
+.market-your-service-text h2 {
+  font-size: 48px;
+  text-align: center;
+}
+.seller-info {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  font-size: 24px;
+}
+.seller-info .fa-circle-check {
+  font-size: 30px;
+  color: #92e3a9;
+}
+
+.profile-cards {
+  width: 100%;
+  position: relative;
+}
+
+.profile-card {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 2px solid #a5a1a150;
+  box-shadow: var(--jobless-shadow);
+  background-color: var(--jobless-white);
+  color: var(--jobless-darkishgray);
+  font-family: var(--secondary-font);
+  padding: 20px;
+  border-radius: 20px;
+  width: 100%;
+  bottom: -200px;
+  font-size: 16px;
+}
+.profile-card-top-row {
+  display: flex;
+  justify-content: space-between;
+}
+.fa-heart {
+  text-align: end;
+}
+.picture-name-container {
+  display: flex;
+  gap: 10px;
+}
+.name-username-container {
+  display: flex;
+  flex-direction: column;
+  font-weight: 800;
+}
+.profile-cards .fa-heart {
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #666;
+}
+.bottom-row {
+  display: flex;
+  justify-content: space-between;
+}
+.card3,
+.card2 {
+  display: none;
+}
+.product-card {
+  position: relative;
+  top: 0;
+  border-radius: 0 0 30px 30px;
+}
+.product-talent-profile {
+  background-image: url(/Images/img/nisse.jpg);
+  background-size: cover;
+}
+.show-product-card-section {
+  padding: 100px 20px;
+}
+.show-product-card-section .inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile-card-with-product {
+  width: 100%;
+}
+
+.product-pic {
+  width: 100%;
+  height: 400px;
+  background-color: #121212;
+  position: relative;
+  top: 50px;
+  border-radius: 30px 30px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 769px) {
+  .hero-banner .inner {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .herobanner-text h1 {
+    font-size: 64px;
+    text-align: start;
+  }
+  .herobanner-text p {
+    text-align: start;
+  }
+  .iphone-hero {
+    width: 500px;
+  }
+  .find-work-container .inner {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 100px;
+  }
+  .find-work-info,
+  .find-work-info p {
+    text-align: start;
+  }
+
+  .example-ui-area {
+    width: 50%;
+    align-items: flex-start;
+  }
+  .mobile-text {
+    display: none;
+  }
+  .desktop-text {
+    display: flex;
+  }
+  .sell-your-service-section .inner {
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 40px;
+  }
+  .sell-your-service-text,
+  .market-your-service-text {
+    width: 100%;
+  }
+
+  .sell-your-service-text h2,
+  .market-your-service-text h2 {
+    font-size: 56px;
+    text-align: start;
+  }
+  .profile-cards {
+    display: flex;
+    justify-content: center;
+  }
+  .profile-card {
+    position: absolute;
+    height: fit-content;
+    font-size: 24px;
+  }
+  .card1 {
+    z-index: 3;
+  }
+  .card2 {
+    display: flex;
+    filter: blur(3px);
+    transform: translateY(-40px) scale(90%);
+    width: 90%;
+    z-index: 2;
+  }
+  .card3 {
+    display: flex;
+    filter: blur(7px);
+    transform: translateY(-75px) scale(70%);
+    width: 80%;
+    z-index: 1;
+  }
+  .show-product-card-section .inner {
+    flex-direction: row;
+  }
+  .product-card {
+    position: relative;
+  }
+}

@@ -1,27 +1,74 @@
 :root {
-    /* Fonts */
-    --heading-font: "Ubuntu", sans-serif;
-    --secondary-font: "Nunito Sans", sans-serif;
+  /* Fonts */
+  --heading-font: "Ubuntu", sans-serif;
+  --secondary-font: "Nunito Sans", sans-serif;
 
-    /* root color */
-    --jobless-white: #fff;
-    --jobless-dark: #000;
-    --jobless-blue: var(--jobless-primary);
-    --jobless-primary: #1b4159;
+  /* root color */
+  --jobless-white: #fff;
+  --jobless-dark: #000;
+  --jobless-blue: var(--jobless-primary);
+  --jobless-primary: #1b4159;
+  --jobless-orange: var(--jobless-secondary);
+  --jobless-secondary: #eca63d;
+  --jobless-darkishgray: #1e1e1e;
+  --jobless-lightgrey: #f4f4f4;
+  --jobless-green: #92e3a9;
 
-    --jobless-oranger: var(--jobless-secondary);
-    --jobless-secondary: #eca63d;
+  /* root shadow */
+  --jobless-shadow-green: 0px 3.6px 2.7px #92e3a906, 0px 9px 6.9px #92e3a908,
+    0px 18.4px 14.2px #92e3a90a, 0px 38px 29.2px #92e3a90c,
+    0px 104px 80px #92e3a912;
 
-    --jobless-darkishgray: #1e1e1e;
+  --jobless-shadow: 0px 3.6px 2.7px rgba(0, 0, 0, 0.022),
+    0px 9px 6.9px rgba(0, 0, 0, 0.031), 0px 18.4px 14.2px rgba(0, 0, 0, 0.039),
+    0px 38px 29.2px rgba(0, 0, 0, 0.048), 0px 104px 80px rgba(0, 0, 0, 0.07);
 
-    /* root shadow */
-    --jobless-shadow: 0px 3.6px 2.7px rgba(0, 0, 0, 0.022),
-        0px 9px 6.9px rgba(0, 0, 0, 0.031),
-        0px 18.4px 14.2px rgba(0, 0, 0, 0.039),
-        0px 38px 29.2px rgba(0, 0, 0, 0.048), 0px 104px 80px rgba(0, 0, 0, 0.07);
-    /*  */
+  /* Buttons */
+  --BTN-radius-jobless: 30px;
+  --BTN-radius-small-jobless: 15px;
+  --BTN-height-jobless: 50px;
+  --BTN-height-small-jobless: 40px;
+  --BTN-border-jobless: 2px solid #000;
+  --BTN-border-white-jobless: 2px solid #fff;
+
+  /*Font sizes*/
+  --fontsize-H1-mobile: 40px;
+  --fontsize-H1-desktop: 46px;
+  --fontsize-h2-desktop: 30px;
+  --fontsize-h2-mobile: 24px;
+}
+* {
+  box-sizing: border-box;
 }
 
-* {
-    box-sizing: border-box;
+.hide {
+  display: none;
+}
+
+.inner {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* class shortcuts */
+.m0 {
+  margin: 0;
+}
+
+.s-font {
+  font-family: var(--secondary-font);
+}
+
+.h-font {
+  font-family: var(--heading-font);
+}
+
+.dark-text {
+  color: var(--jobless-dark);
+}
+
+.white-text {
+  color: var(--jobless-white);
 }
