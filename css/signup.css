@@ -162,6 +162,7 @@ body {
     font-size: 14px;
     display: flex;
     justify-content: center;
+    border-bottom: 1px solid #bbbbbb;
   }
   a {
     text-decoration: none;
@@ -791,7 +792,7 @@ body {
     background-size: cover;
     position: relative;
     display: flex;
-    width: 40%;
+    width: 30%;
     float: left;
     z-index: 50;
   }

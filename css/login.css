@@ -718,7 +718,7 @@ body {
     background-size: cover;
     position: relative;
     display: flex;
-    width: 40%;
+    width: 30%;
     float: left;
     z-index: 50;
   }
@@ -750,6 +750,6 @@ body {
     border: transparent;
     height: 33px;
     margin: auto;
-    margin-top: 200px;
+    margin-top: 240px;
   }
 }
