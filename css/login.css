@@ -1,0 +1,755 @@
+body {
+  margin: 0px;
+}
+@media screen and (max-width: 767px) {
+  .login-container .inner {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .login-container {
+    background-image: url(/Images/images/palm-texture.jpg);
+    padding: 40px 20px;
+    height: fit-content;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .login-container * {
+    position: relative;
+    z-index: 50;
+  }
+  .login-container::after {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--jobless-primary);
+    mix-blend-mode: overlay;
+  }
+  .sign-in {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+  }
+  h1 {
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  .fa-linkedin-in {
+    color: #fff;
+  }
+  .fa-facebook-f {
+    color: #fff;
+  }
+  .fa-google {
+    color: #fff;
+  }
+  .socials {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .facebook,
+  .google,
+  .linked-in {
+    border: #fff solid 1px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+  }
+  p {
+    display: flex;
+    justify-content: center;
+    color: #bbbbbb;
+    font-size: 13px;
+    margin-top: -10px;
+  }
+  .sign-up-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    gap: 20px;
+  }
+  .username-email {
+    font-size: 10px;
+    font-weight: 200;
+  }
+  input {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 200;
+    height: 33px;
+    border-radius: 5px;
+    border: transparent;
+  }
+  .fa-circle-user {
+    z-index: 51;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    left: 5px;
+    color: #bbbbbb;
+  }
+  .sign-up-username {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+  }
+  .username {
+    text-indent: 20px;
+  }
+  .fa-lock {
+    z-index: 51;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    left: 5px;
+    color: #bbbbbb;
+  }
+  .sign-up-password {
+    width: 100%;
+    position: relative;
+    max-width: 400px;
+  }
+  .password {
+    text-indent: 20px;
+  }
+  ::placeholder {
+    font-weight: 200;
+    font-size: 13px;
+    color: #bbbbbb;
+  }
+  .login-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: #fff;
+    border-radius: 50px;
+    border: transparent;
+    height: 33px;
+    margin: auto;
+    max-width: 181px;
+  }
+  .already {
+    color: #fff;
+    font-weight: 200;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #bbbbbb;
+  }
+  a {
+    text-decoration: none;
+  }
+  .desktop-already {
+    display: none;
+  }
+  .or {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .login {
+    display: flex;
+  }
+
+  .login-container .inner {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .login-container {
+    padding: 40px 20px;
+    height: fit-content;
+    width: 80%;
+    /*
+    background-color: grey;*/
+    background-image: url(/Images/images/idk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .login-container * {
+    position: relative;
+    z-index: 50;
+  }
+
+  .desktop-already::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--jobless-primary);
+    mix-blend-mode: overlay;
+  }
+
+  .sign-in {
+    color: var(--jobless-primary);
+    display: flex;
+    justify-content: center;
+  }
+  h1 {
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  .fa-linkedin-in {
+    color: var(--jobless-primary);
+  }
+  .fa-facebook-f {
+    color: var(--jobless-primary);
+  }
+  .fa-google {
+    color: var(--jobless-primary);
+  }
+  .socials {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .facebook,
+  .google,
+  .linked-in {
+    border: var(--jobless-primary) solid 1px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+  }
+  p {
+    display: flex;
+    justify-content: center;
+    color: var(--jobless-primary);
+    font-size: 13px;
+    margin-top: -10px;
+  }
+  .sign-up-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    gap: 20px;
+  }
+  .username-email {
+    display: none;
+    font-size: 10px;
+    font-weight: 200;
+  }
+  input {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 200;
+    height: 33px;
+    border-radius: 5px;
+    border: transparent;
+  }
+  .fa-circle-user {
+    z-index: 51;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    left: 5px;
+    color: #bbbbbb;
+  }
+  .sign-up-username {
+    position: relative;
+    width: 80%;
+  }
+  .username {
+    text-indent: 20px;
+  }
+  .fa-lock {
+    z-index: 51;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    left: 5px;
+    color: #bbbbbb;
+  }
+  .sign-up-password {
+    width: 80%;
+    position: relative;
+  }
+  .password {
+    text-indent: 20px;
+  }
+  ::placeholder {
+    font-weight: 200;
+    font-size: 13px;
+    color: #bbbbbb;
+  }
+  .login-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: #fff;
+    border-radius: 50px;
+    border: transparent;
+    height: 33px;
+    margin: auto;
+  }
+  .already {
+    display: none;
+    color: #fff;
+  }
+  a {
+    text-decoration: none;
+  }
+  .desktop-already {
+    z-index: 50;
+    background-image: url(/Images/images/palm-texture.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    width: 40%;
+    float: left;
+  }
+  .dont-have {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+  }
+  .text-sidebar {
+    padding-top: 35px;
+  }
+  .details-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding-top: 20px;
+    font-weight: 200;
+  }
+  .signup-btn2 {
+    z-index: 510;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: #fff;
+    border-radius: 50px;
+    border: transparent;
+    height: 33px;
+    margin: auto;
+    margin-top: 204px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .or {
+    display: none;
+  }
+  .login {
+    display: flex;
+  }
+  .login-container .inner {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .login-container {
+    padding: 40px 20px;
+    height: fit-content;
+    width: 80%;
+    /*
+      background-color: grey;*/
+    background-image: url(/Images/images/idk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .login-container * {
+    position: relative;
+    z-index: 50;
+  }
+  .desktop-already::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--jobless-primary);
+    mix-blend-mode: overlay;
+  }
+  .sign-in {
+    color: var(--jobless-primary);
+    display: flex;
+    justify-content: center;
+  }
+  h1 {
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  .fa-linkedin-in {
+    color: var(--jobless-primary);
+  }
+  .fa-facebook-f {
+    color: var(--jobless-primary);
+  }
+  .fa-google {
+    color: var(--jobless-primary);
+  }
+  .socials {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .facebook,
+  .google,
+  .linked-in {
+    border: var(--jobless-primary) solid 1px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+  }
+  p {
+    display: flex;
+    justify-content: center;
+    color: var(--jobless-primary);
+    font-size: 13px;
+    margin-top: -10px;
+  }
+  .sign-up-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    gap: 20px;
+    width: 565px;
+    margin: auto;
+  }
+  .username-email {
+    font-size: 10px;
+    font-weight: 200;
+  }
+  input {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 200;
+    height: 33px;
+    border-radius: 5px;
+    border: transparent;
+  }
+  .fa-circle-user {
+    z-index: 51;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    left: 5px;
+    color: #bbbbbb;
+  }
+  .sign-up-username {
+    position: relative;
+    width: 80%;
+  }
+  .username {
+    text-indent: 20px;
+  }
+  .fa-lock {
+    z-index: 51;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    left: 5px;
+    color: #bbbbbb;
+  }
+  .sign-up-password {
+    width: 80%;
+    position: relative;
+  }
+  .password {
+    text-indent: 20px;
+  }
+  ::placeholder {
+    font-weight: 200;
+    font-size: 13px;
+    color: #bbbbbb;
+  }
+  .login-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    background-color: #fff;
+    border-radius: 50px;
+    border: transparent;
+    height: 33px;
+    margin: auto;
+  }
+  .already {
+    display: none;
+    color: #fff;
+  }
+  a {
+    text-decoration: none;
+  }
+  .desktop-already {
+    z-index: 50;
+    background-image: url(/Images/images/palm-texture.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    width: 30%;
+    float: left;
+  }
+  .dont-have {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+  }
+  .text-sidebar {
+    padding-top: 35px;
+    width: 100%;
+  }
+  .details-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding-top: 20px;
+    font-weight: 200;
+  }
+  .signup-btn2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: #fff;
+    border-radius: 50px;
+    border: transparent;
+    height: 33px;
+    margin: auto;
+    margin-top: 200px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .or {
+    display: none;
+  }
+  .login {
+    display: flex;
+  }
+  .login-container .inner {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .login-container {
+    padding: 40px 20px;
+    height: fit-content;
+    width: 80%;
+    /*
+        background-color: grey;*/
+    background-image: url(/Images/images/idk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .login-container * {
+    position: relative;
+    z-index: 50;
+  }
+  .desktop-already::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--jobless-primary);
+    mix-blend-mode: overlay;
+  }
+  .sign-in {
+    color: var(--jobless-primary);
+    display: flex;
+    justify-content: center;
+  }
+  h1 {
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  .fa-linkedin-in {
+    color: var(--jobless-primary);
+  }
+  .fa-facebook-f {
+    color: var(--jobless-primary);
+  }
+  .fa-google {
+    color: var(--jobless-primary);
+  }
+  .socials {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .facebook,
+  .google,
+  .linked-in {
+    border: var(--jobless-primary) solid 1px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+  }
+  p {
+    display: flex;
+    justify-content: center;
+    color: var(--jobless-primary);
+    font-size: 13px;
+    margin-top: -10px;
+  }
+  .sign-up-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    gap: 20px;
+    width: 565px;
+    margin: auto;
+  }
+  .username-email {
+    font-size: 10px;
+    font-weight: 200;
+  }
+  input {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 200;
+    height: 33px;
+    border-radius: 5px;
+    border: transparent;
+  }
+  .fa-circle-user {
+    z-index: 51;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    left: 5px;
+    color: #bbbbbb;
+  }
+  .sign-up-username {
+    position: relative;
+    width: 80%;
+  }
+  .username {
+    text-indent: 20px;
+  }
+  .fa-lock {
+    z-index: 51;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    left: 5px;
+    color: #bbbbbb;
+  }
+  .sign-up-password {
+    width: 80%;
+    position: relative;
+  }
+  .password {
+    text-indent: 20px;
+  }
+  ::placeholder {
+    font-weight: 200;
+    font-size: 13px;
+    color: #bbbbbb;
+  }
+  .login-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    background-color: #fff;
+    border-radius: 50px;
+    border: transparent;
+    height: 33px;
+    margin: auto;
+    max-width: 248px;
+  }
+  .already {
+    display: none;
+    color: #fff;
+  }
+  a {
+    text-decoration: none;
+  }
+  .desktop-already {
+    background-image: url(/Images/images/palm-texture.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    width: 40%;
+    float: left;
+    z-index: 50;
+  }
+  .dont-have {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+  }
+  .text-sidebar {
+    padding-top: 35px;
+    width: 100%;
+  }
+  .details-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding-top: 20px;
+    font-weight: 200;
+  }
+  .signup-btn2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: #fff;
+    border-radius: 50px;
+    border: transparent;
+    height: 33px;
+    margin: auto;
+    margin-top: 200px;
+  }
+}
