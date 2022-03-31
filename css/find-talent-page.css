@@ -1,0 +1,406 @@
+.talent-hero-banner {
+  background-image: url(../Images/img/talent-background.jpg);
+  background-size: cover;
+  width: 100%;
+  position: relative;
+}
+.talent-hero-banner * {
+  position: relative;
+  z-index: 50;
+}
+.talent-hero-banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(38, 53, 85);
+  background: linear-gradient(
+    3deg,
+    rgba(38, 53, 85, 0) 0%,
+    rgba(27, 65, 89, 1) 100%
+  );
+  z-index: 0;
+}
+.talent-hero-banner .inner {
+  padding: 50px 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profilbilde-arne {
+  width: 80%;
+}
+.talent-hero-text {
+  text-align: center;
+  color: var(--jobless-white);
+}
+.hero-jobless span {
+  font-weight: 300;
+  font-style: normal;
+}
+.hero-jobless {
+  font-family: var(--secondary-font);
+  font-style: italic;
+  text-decoration: underline;
+}
+.portefoljer .inner {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.portefolje-eksempel {
+  width: 100%;
+}
+.portefolje-img {
+  width: 100px;
+  height: 100px;
+  background-color: #262626;
+  border-radius: 50%;
+  background-image: url(../Images/img/profilbilde-arne.png);
+  background-size: cover;
+  background-position: center;
+}
+.portefolje-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.portefolje-eksempel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 400px;
+}
+.eksempel-navn h3 {
+  margin: 0;
+  font-size: 22px;
+}
+.eksempel-navn span {
+  font-size: 14px;
+}
+.eksempel-work h3 {
+  font-size: 24px;
+}
+.annmeldelser {
+  font-size: 13px;
+}
+.score {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.fa-star {
+  color: #ffd200;
+}
+.star-rating {
+  font-size: 17px;
+}
+.portefolje-btn {
+  background-color: var(--jobless-primary);
+  color: var(--jobless-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 100%;
+  border-radius: 10px;
+}
+.ekstra-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.portefolje-sted {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.medlem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.sted-pin {
+  display: flex;
+  gap: 10px;
+}
+.siden {
+  display: flex;
+  gap: 10px;
+}
+.pick-freelancer {
+  background-color: #1e1e1e;
+  color: var(--jobless-white);
+}
+.pick-freelancer .inner {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+.pick-info {
+  text-align: center;
+}
+.samtale-mockup {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.samtale-company {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.samtale-person {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: flex-end;
+}
+.company-logo {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: white;
+  background-image: url(../Images/logos/Google__G__Logo.svg);
+  background-size: cover;
+}
+.person-logo {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: var(--jobless-white);
+  background-image: url(../Images/img/profilbilde-arne.png);
+  background-size: cover;
+  background-position: center;
+}
+.samtale-tekst {
+  font-size: 14px;
+  width: fit-content;
+  max-width: 300px;
+  background-color: #4183ac;
+  padding: 10px;
+  border-radius: 10px;
+}
+.samtale-tekst-person {
+  font-size: 14px;
+  width: fit-content;
+  max-width: 300px;
+  background-color: var(--jobless-white);
+  color: var(--jobless-primary);
+  padding: 10px;
+  border-radius: 10px;
+}
+.kontrakt .inner {
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 50px;
+  overflow: hidden;
+  align-items: center;
+}
+.kontrakt-info {
+  font-size: 20px;
+  text-align: center;
+}
+.kontrakt-info h2 {
+  margin: 0;
+  padding-bottom: 10px;
+  font-size: 30px;
+}
+.kontrakt-img img {
+  width: 300px;
+}
+/* jobb mockup */
+.job-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  border: 2px solid #a5a1a150;
+  box-shadow: var(--jobless-shadow);
+  background-color: var(--jobless-white);
+  font-family: var(--secondary-font);
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.title-and-like,
+.company-and-sallary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title-and-like {
+  font-weight: 800;
+}
+.title-and-like .fa-heart {
+  color: #cd0000;
+}
+.sallary {
+  font-weight: 800;
+}
+.sallary span {
+  font-weight: 500;
+}
+.job-card-buttons-container {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.job-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  border: 1px solid var(--jobless-darkishgray);
+  width: 100px;
+  padding: 5px 15px;
+}
+.publiser-jobb {
+  background-color: #eaeaea;
+}
+.publiser-jobb .inner {
+  padding: 70px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+.publiser {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+}
+.publiser-info h2 {
+  font-size: 40px;
+}
+.publiser-steg {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-weight: 800;
+}
+.fa-circle-check {
+  color: #92e3a9;
+}
+@media screen and (min-width: 769px) {
+  .talent-hero-banner {
+    height: 600px;
+    overflow: hidden;
+  }
+  .talent-hero-banner .inner {
+    flex-direction: row;
+    align-items: flex-end;
+    height: 100%;
+    justify-content: space-between;
+  }
+  .talent-hero-banner::after {
+    background: rgb(38, 53, 85);
+    background: linear-gradient(
+      299deg,
+      rgba(38, 53, 85, 0) 0%,
+      rgba(27, 65, 89, 1) 100%
+    );
+  }
+  .talent-hero-text {
+    font-size: 48px;
+    text-align: start;
+    height: 100%;
+    padding-top: 100px;
+  }
+  .profilbilde-arne {
+    height: 100%;
+    width: auto;
+  }
+  .portefoljer .inner {
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .portefolje-info {
+    max-width: 300px;
+    text-align: left;
+    font-size: 20px;
+  }
+  .portefolje-info h2 {
+    font-size: 36px;
+    margin: 0;
+    padding-bottom: 10px;
+  }
+  .portefolje-eksempel {
+    max-width: 400px;
+  }
+  .pick-freelancer .inner {
+    max-width: 1024px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    align-items: center;
+    flex-direction: row;
+  }
+  .pick-info h2 {
+    font-size: 40px;
+  }
+  .pick-info {
+    text-align: left;
+  }
+  .samtale-mockup {
+    width: 100%;
+    max-width: 600px;
+  }
+  .kontrakt .inner {
+    flex-direction: row;
+    align-items: center;
+    max-width: 1024px;
+  }
+  .kontrakt-info {
+    position: relative;
+    top: -50px;
+    font-size: 20px;
+    text-align: left;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .kontrakt-info h2 {
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 30px;
+  }
+  .kontrakt-img img {
+    width: 400px;
+  }
+  .publiser-jobb .inner {
+    flex-direction: row;
+  }
+  .publiser-info,
+  .publiser-steg {
+    text-align: left;
+  }
+}

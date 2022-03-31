@@ -64,6 +64,9 @@
 .h-font {
   font-family: var(--heading-font);
 }
+.sh {
+  box-shadow: var(--jobless-shadow);
+}
 
 .dark-text {
   color: var(--jobless-dark);

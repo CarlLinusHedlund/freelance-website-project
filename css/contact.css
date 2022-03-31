@@ -2,16 +2,12 @@
   margin: 0;
   padding: 0;
 }
-
-header {
-  background-color: var(--jobless-dark);
-}
 .contact-container .inner {
   position: relative;
 }
 
 .contact-container {
-  background-image: url(../images/img/black-texture2.jpg);
+  background-image: url(../Images/img/black-texture2.jpg);
   height: 100%;
   padding-bottom: 10px;
   background-size: cover;
@@ -44,6 +40,7 @@ header {
   top: 0;
   left: 0;
   height: 100%;
+  width: 100%;
 }
 
 .contact-container::after {
@@ -62,19 +59,22 @@ header {
 }
 
 .blob1 {
-  top: 50px;
+  top: 0px;
+  right: 0;
+  width: 80%;
 }
 
 .blob2 {
+  width: 50%;
   top: 650px;
   right: 0px;
 }
 
 .contact-img {
-  width: 100%;
+  width: 99%;
   top: 220px;
   right: 0px;
-  position: relative;
+  position: absolute;
 }
 
 .contact-img img {
@@ -138,29 +138,9 @@ header {
   box-shadow: var(--jobless-shadow-green);
 }
 
-.header-container {
-  background-color: var(--jobless-dark);
-}
-
-header .inner {
-  background-color: var(--jobless-dark);
-}
-
-.fa-bars {
-  color: var(--jobless-white);
-}
-
-.logo {
-  color: #92e3a9;
-}
-
-#bli-med {
-  background-color: #92e3a9;
-  color: var(--jobless-dark);
-}
-
 .social-media-container {
-  margin-top: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   display: flex;
   gap: 30px;
 }
@@ -168,6 +148,9 @@ header .inner {
 .social-media-container i {
   font-size: 2em;
   margin-top: 20px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: var(--jobless-white);
 }
 
 .jobless-phone,
@@ -176,6 +159,7 @@ header .inner {
   gap: 20px;
   font-size: 20px;
   color: #d3d3d3;
+  right: 0px;
 }
 
 .fa-at,
@@ -266,26 +250,32 @@ header .inner {
     width: 150%;
     height: 150%;
     top: 90px;
-    right: -10px;
+    right: 0px;
   }
 
   .blob2 {
-    top: 100px;
+    top: 50px;
+    right: 0px;
+    width: 60%;
   }
 
   .blob1 {
-    top: 480px;
-    left: -150px;
+    width: 100%;
+    max-width: 380px;
+    top: 550px;
+    left: -100px;
   }
 }
 
 @media screen and (min-width: 770px) and (max-width: 882px) {
   .blob1 {
-    top: 380px;
+    top: 480px;
+    width: 80%;
   }
 
   .blob2 {
-    top: 70px;
+    width: 60%;
+    top: 0px;
   }
 }
 
@@ -293,5 +283,9 @@ header .inner {
   .blob1 {
     top: 630px;
     left: -190px;
+  }
+
+  .blob2 {
+    width: 50%;
   }
 }
