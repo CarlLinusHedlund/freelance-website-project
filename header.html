@@ -1,6 +1,13 @@
+<script
+      src="https://kit.fontawesome.com/25a95e2ecb.js"
+      crossorigin="anonymous"
+></script>
 <link rel="stylesheet" href="./css/nav-bar.css" />
 <link rel="stylesheet" href="./css/normalize.css" />
 <link rel="stylesheet" href="./css/root.css" />
+<script src="https://www.w3schools.com/lib/w3data.js"></script>
+<script src="./js/responsiveNav.js" defer></script>
+<script src="./js/local-storage.js" defer></script>
 <header>
   <div class="inner">
     <div class="header-container">
@@ -33,23 +40,35 @@
       </div>
       <div class="nav">
         <div class="desktop-nav">
-          <a href="./beta-tester.html" class="nav-link" id="utforsk"
+          <a href="./beta-tester.html" class="nav-link nav-link1" id="utforsk"
             >Bli En Betatester</a
           >
-          <a href="./find-job.html" class="nav-link" id="finn-jobb"
+          <a href="./find-job.html" class="nav-link nav-link2" id="finn-jobb"
             >Finn Jobb</a
           >
-          <a href="./find-talent-page.html" class="nav-link" id="finn-talent"
+          <a href="./find-talent-page.html" class="nav-link nav-link3" id="finn-talent"
             >Finn Talent</a
           >
-          <a href="./contact.html" class="nav-link" id="bli-en-selger"
-            >Kontakt Oss</a
-          >
+          <a href="./contact.html" class="nav-link nav-link4" id="bli-en-selger"
+            >Kontakt Oss</a>
           <div class="språk-velger">
-            <span>NO</span>
-            <i class="fa-solid fa-globe"></i>
+            <div class="globe-container" id="språk-velger" onclick="myFunction()">
+              <i class="fa-solid fa-globe"></i>
+              <div class="globe-text">NO</div>
+            </div>
+            <div class="lang-container hide" id="langContainer">
+              <div class="lang-inner-container">
+                <div class="selected_lang lang-toggle no" id="no" onclick="enableNoMode()">
+                  <div class="flag-container no-flag"></div>
+                  <div>NO</div>
+                </div>
+                <div class="lang-toggle en" id="en" onclick="enableEnMode()">
+                  <div class="flag-container en-flag"></div>
+                  <div>EN</div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
         <div class="user-nav-container">
           <a href="#" class="user-nav sign-in-button" id="logg-på">Logg På</a>
           <button class="user-nav join-button" id="bli-med">Bli Med</button>
@@ -58,3 +77,108 @@
     </div>
   </div>
 </header>
+<section class="contact-container">
+  <div class="inner">
+    <div class="contact-form-container">
+      <div class="contact-form-header">
+        <h1 class="m0">Hvordan kan vi helpe deg?</h1>
+        <p class="m0 s-font">
+          Om du ønsker å ta kontakt med oss, kan du bruke vårt
+          kontaktskjema. <br />
+          Eller kontakt oss på telefon.
+        </p>
+      </div>
+      <div class="contact-form-wrapper">
+        <form
+          netlify
+          name="contact"
+          method="post"
+          data-netlify="true"
+          onsubmit="SubmitEvent"
+          data-netlify-honeypot="bot-field"
+        >
+          <div class="input-container">
+            <input class="hide" name="bot-field" />
+            <div class="input-name-container">
+              <label class="m0 s-font white-text" for="name">Navn</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+              />
+            </div>
+            <div class="input-email-container">
+              <label for="inputEmail" class="m0 s-font white-text"
+                >E-mail</label
+              >
+              <input
+                type="email"
+                name="email"
+                id="inputEmail"
+                class="form-control"
+              />
+            </div>
+            <div class="input-message-container">
+              <label for="messageInput" class="white-text s-font"
+                >Din Melding</label
+              >
+              <textarea
+                class="message-input"
+                name="message"
+                id="messageInput"
+                rows="10"
+              ></textarea>
+            </div>
+            <button type="submit" class="submit-button">
+              Send Melding
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="other-contact-container">
+        <div class="other-contact white-text">
+          <div class="jobless-phone">
+            <i class="fa-solid fa-phone"></i>
+            <p class="m0">+47 895 45 641</p>
+          </div>
+          <div class="jobless-mail">
+            <i class="fa-solid fa-at"></i>
+            <p class="m0">jobless@work.no</p>
+          </div>
+        </div>
+        <div class="social-media-container">
+          <a href=""><i class="fa-brands fa-facebook white-text"></i></a>
+          <a href=""><i class="fa-brands fa-instagram white-text"></i></a>
+
+          <a href=""><i class="fa-brands fa-github white-text"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin white-text"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="contact-img-container">
+      <img
+        data-value="8"
+        id="greenBlob"
+        class="green-blob blob2 blobJs"
+        src="./Images/img/green-blob2.png"
+        alt="green blob"
+      />
+      <div class="contact-img">
+        <img
+          data-value="2"
+          src="./Images/img/monalisa-blob.png"
+          alt="green blob"
+          class="green-blob blobJs"
+        />
+      </div>
+      <img
+        data-value="7"
+        id="greenBlob"
+        class="green-blob blob1 blobJs"
+        src="./Images/img/green-blob.png"
+        alt="green blob blobJs"
+      />
+    </div>
+  </div>
+</section>

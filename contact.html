@@ -28,6 +28,7 @@
       src="https://identity.netlify.com/v1/netlify-identity-widget.js"
     ></script>
     <script src="./js/responsiveNav.js" defer></script>
+    <script src="./js/select-lang-contact.js" defer></script>
   </head>
   <body>
     <header class="dark-header">
@@ -42,16 +43,16 @@
             </a>
           </div>
           <div class="mobile-nav hidden">
-            <a href="./beta-tester.html" class="nav-link" id="utforsk"
+            <a href="./beta-tester.html" class="nav-link nav-link1" id="utforsk"
               >Bli En Betatester</a
             >
-            <a href="./find-job.html" class="nav-link" id="finn-jobb"
+            <a href="./find-job.html" class="nav-link nav-link2" id="finn-jobb"
               >Finn Jobb</a
             >
-            <a href="./find-talent-page.html" class="nav-link" id="finn-talent"
+            <a href="./find-talent-page.html" class="nav-link nav-link3" id="finn-talent"
               >Finn Talent</a
             >
-            <a href="./contact.html" class="nav-link" id="bli-en-selger"
+            <a href="./contact.html" class="nav-link nav-link4" id="bli-en-selger"
               >Kontakt Oss</a
             >
             <div class="språk-velger">
@@ -61,24 +62,38 @@
           </div>
           <div class="nav">
             <div class="desktop-nav">
-              <a href="./beta-tester.html" class="nav-link" id="utforsk"
+              <a href="./beta-tester.html" class="nav-link nav-link1" id="utforsk"
                 >Bli En Betatester</a
               >
-              <a href="./find-job.html" class="nav-link" id="finn-jobb"
+              <a href="./find-job.html" class="nav-link nav-link2" id="finn-jobb"
                 >Finn Jobb</a
               >
               <a
                 href="./find-talent-page.html"
-                class="nav-link"
+                class="nav-link nav-link3"
                 id="finn-talent"
                 >Finn Talent</a
               >
-              <a href="./contact.html" class="nav-link" id="bli-en-selger"
+              <a href="./contact.html" class="nav-link nav-link4" id="bli-en-selger"
                 >Kontakt Oss</a
               >
               <div class="språk-velger">
-                <span>NO</span>
-                <i class="fa-solid fa-globe"></i>
+                <div class="globe-container" id="språk-velger" onclick="myFunction()">
+                  <i class="fa-solid fa-globe"></i>
+                  <div class="globe-text">NO</div>
+                </div>
+                <div class="lang-container hide" id="langContainer">
+                  <div class="lang-inner-container">
+                    <div class="selected_lang lang-toggle no" id="no" onclick="enableNoMode()">
+                      <div class="flag-container no-flag"></div>
+                      <div>NO</div>
+                    </div>
+                    <div class="lang-toggle en" id="en" onclick="enableEnMode()">
+                      <div class="flag-container en-flag"></div>
+                      <div>EN</div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="user-nav-container">
@@ -169,7 +184,7 @@
         </div>
         <div class="contact-img-container">
           <img
-            data-value="8"
+            data-value="9"
             id="greenBlob"
             class="green-blob blob2 blobJs"
             src="./Images/img/green-blob2.png"
@@ -184,7 +199,7 @@
             />
           </div>
           <img
-            data-value="7"
+            data-value="8"
             id="greenBlob"
             class="green-blob blob1 blobJs"
             src="./Images/img/green-blob.png"

@@ -58,14 +58,96 @@ header .inner {
   text-decoration: none;
 }
 .språk-velger {
-  background-color: #eaeaea;
-  padding: 10px;
-  border-radius: 5px;
   font-size: 12px;
+  gap: 5px;
+  width: 50px;
+  height: 30px;
+  background-color: #eaeaea;
+  border-radius: 5px;
+  position: relative;
 }
+
+.globe-container {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.lang-inner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.lang-container {
+  position: absolute;
+  top: 33px;
+  width: 50px;
+  height: 60px;
+  border-radius: 5px;
+  gap: 2px;
+  transition: ease-in-out 200ms;
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.lang-toggle {
+  z-index: 100;
+  gap: 5px;
+  width: 100%;
+  padding: 5px;
+  height: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  border-radius: 5px;
+  background-color: #424242;
+  color: var(--jobless-white);
+}
+
+.selected_lang {
+  border: 1px solid white;
+}
+
+.en-flag {
+  background-image: url(../images/svgs/uk-flag.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+.no-flag {
+  background-image: url(../images/svgs/nor-flag.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+.flag-container {
+  width: 12px;
+  height: 12px;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
 .sign-in-button {
   display: none;
 }
+
+.fa-globe {
+  font-size: 18px;
+}
+
 .join-button {
   border: none;
   border-radius: 15px;
@@ -213,5 +295,9 @@ header .inner {
   }
   .dark-header a {
     color: var(--jobless-white);
+  }
+
+  .fa-bars {
+    display: none;
   }
 }
